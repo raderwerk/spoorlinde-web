@@ -118,12 +118,22 @@ export function bindAanvraagForm(root: Document, options: BindOptions): void {
 
     if (result.status === "invalid") {
       const emailError = result.errors.find((error) => error.field === "email");
-      setFieldError(form, "email", emailError?.message ?? "");
       const naamError = result.errors.find((error) => error.field === "naam");
-      setFieldError(form, "naam", naamError?.message ?? "");
       const reisError = result.errors.find((error) => error.field === "reisSlug");
+      setFieldError(form, "email", emailError?.message ?? "");
+      setFieldError(form, "naam", naamError?.message ?? "");
       setFieldError(form, "reisSlug", reisError?.message ?? "");
-      setStatus(status, describeSubmitResult(result), true);
+      if (reisError) {
+        step = 1;
+      } else if (emailError || naamError) {
+        step = 2;
+      }
+      renderStep(root, step);
+      setStatus(
+        status,
+        emailError?.message || naamError?.message || reisError?.message || describeSubmitResult(result),
+        true,
+      );
       return;
     }
 

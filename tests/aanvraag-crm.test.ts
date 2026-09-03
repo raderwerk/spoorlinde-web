@@ -6,6 +6,7 @@ import {
   PAYMENT_FIELDS_NEVER_ASKED,
   validateAanvraag,
 } from "../src/lib/aanvraag/validate";
+import { createAanvraagRuntime } from "../src/lib/aanvraag/runtime";
 import { DraftStore, TOTAL_STEPS, nextStep } from "../src/lib/aanvraag/draft";
 import { MockCrm } from "../src/lib/crm/mock-crm";
 import { Outbox } from "../src/lib/crm/outbox";
@@ -156,6 +157,23 @@ describe("test-only e-mail guard", () => {
     expect(() => sendTransactionalEmail("reiziger@example.com", "x", "y")).toThrow(
       /no mail is sent/i,
     );
+  });
+});
+
+describe("browser runtime wiring", () => {
+  it("uses one prefixed store so a second submit adds a note, not a contact", async () => {
+    const store = new MemoryStore();
+    const runtime = createAanvraagRuntime(store);
+    runtime.retryDelayMs = 0;
+
+    const first = await submitAanvraag(aanvraag(), runtime);
+    const second = await submitAanvraag(aanvraag(), runtime);
+    const crm = runtime.crm as MockCrm;
+
+    expect(first.status).toBe("created");
+    expect(second.status).toBe("duplicate");
+    expect(crm.snapshot().contacts).toHaveLength(1);
+    expect(crm.snapshot().contacts[0]?.notes).toHaveLength(1);
   });
 });
 
