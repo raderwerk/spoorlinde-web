@@ -12,6 +12,7 @@ const reizen = await getCollection("reizen");
     De reis is belangrijker dan de bestemming. Kies een reis en vraag hem aan; de
     aanvraag landt in het CRM van deze demo, zonder betaling en zonder echte e-mail.
   </p>
+  <p><a class="button" href={sitePath("reizen")}>Zoek en filter alle reizen</a></p>
   <ul class="trip-list">
     {
       reizen.map((reis) => (

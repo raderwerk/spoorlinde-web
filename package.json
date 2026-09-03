@@ -10,6 +10,7 @@
     "lint": "astro check",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:filters": "node --test tests/filter-reizen.test.mjs",
     "test:content": "node scripts/validate-content.mjs && node tests/content-error-path.mjs"
   },
   "engines": {

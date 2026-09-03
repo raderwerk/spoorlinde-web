@@ -18,6 +18,10 @@ Spoorlinde is een **fictieve** klant in de Raderwerk-demo. Er bestaat geen echt 
 - Geen betalingen, geen serverstatus nodig voor de contentpagina's zelf: een statische build past bij "geen betalingen, wél een aanvraagformulier".
 - Bouwt met één commando, draait met één commando, deployt naar GitHub Pages zonder extra infrastructuur.
 
+## Reizen zoeken en filteren
+
+Op `/reizen` filter je het volledige aanbod direct op vertrekmaand, reisduur en land. De selectie staat in de querystring, zodat een gekopieerde URL dezelfde resultaten toont. Sorteren kan op vertrekdatum of prijs. Als een combinatie geen exacte reis oplevert, toont de pagina maximaal drie alternatieven die op de meeste gekozen kenmerken overeenkomen.
+
 ## Aanvraagformulier, mock-CRM en dubbeldetectie
 
 Het formulier staat op `/aanvraag` (maximaal drie stappen: reis, gegevens, controle). Er worden **geen betaalgegevens** gevraagd. Na een geslaagde aanvraag volgt een bevestigingsscherm met referentienummer (`SL-…`).
@@ -45,6 +49,7 @@ Vereist: Node.js 22 of hoger.
 npm install
 npm run dev       # lokale server op http://localhost:4321
 npm test          # CRM-scenario's: nieuw contact, duplicaat, storing
+npm run test:filters # filters, sortering en dichtstbijzijnde alternatieven
 npm run build     # typecheck + statische build naar dist/
 npm run test:content # controleert twaalf reizen plus een ongeldige reis
 npm run preview   # de build lokaal bekijken
