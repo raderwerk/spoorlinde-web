@@ -7,7 +7,9 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "lint": "astro check"
+    "lint": "astro check",
+    "test:content": "node scripts/validate-content.mjs && node tests/content-error-path.mjs",
+    "test": "node --test tests/*.test.mjs"
   },
   "engines": {
     "node": ">=22"
