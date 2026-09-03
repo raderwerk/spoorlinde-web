@@ -47,6 +47,7 @@ npm run dev       # lokale server op http://localhost:4321
 npm test          # CRM-scenario's: nieuw contact, duplicaat, storing
 npm run build     # typecheck + statische build naar dist/
 npm run test:content # controleert twaalf reizen plus een ongeldige reis
+npm test            # valideert content en de gebouwde reisdetailpagina's
 npm run preview   # de build lokaal bekijken
 ```
 
@@ -73,9 +74,11 @@ reis zonder vertrekdatum of zonder prijsstaffel niet worden gepubliceerd.
 | dag.titel | tekst | ja | Aankomst in Bolzano |
 | dag.beschrijving | tekst | ja | We verkennen de stad… |
 | dag.vervoer | tekst | ja | nachttrein en regionale trein |
+| dag.bron | tekst | ja | Klantdossier Spoorlinde — fictieve voorbeeldroute |
 | dag.verblijf | tekst | ja | familiehotel in Bolzano |
 | reis.vertrekdata | lijst van vertrekdata | ja, minimaal 1 | 2027-05-14 |
 | vertrek.datum | datum | ja | 2027-05-14 |
+| vertrek.bron | tekst | ja | Klantdossier Spoorlinde — fictieve prijsopgave 2027 |
 | vertrek.prijsstaffels | lijst van prijzen | ja, minimaal 1 | gedeelde kamer, € 1295 |
 | prijs.omschrijving | tekst | ja | per persoon, gedeelde kamer |
 | prijs.prijs | positief geheel getal (euro) | ja | 1295 |

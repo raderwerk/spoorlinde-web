@@ -7,45 +7,54 @@ dagen:
 - nummer: 1
   titel: Via Londen naar Glasgow
   beschrijving: Treinen via Londen brengen ons naar Glasgow, met uitzicht op de heuvels van Cumbria.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: Eurostar en intercity
   verblijf: hotel in Glasgow
 - nummer: 2
   titel: Glasgow architectuur
   beschrijving: We wandelen van de Victoriaanse binnenstad naar de universiteit en de oevers van de Clyde.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: metro en te voet
   verblijf: hotel in Glasgow
 - nummer: 3
   titel: West Highland Line
   beschrijving: De trein slingert langs Loch Lomond en Rannoch Moor naar Fort William.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: trein
   verblijf: pension in Fort William
 - nummer: 4
   titel: Glen Nevis
   beschrijving: Een dalwandeling volgt de rivier en watervallen zonder de steile top van Ben Nevis te beklimmen.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: lokale bus en te voet
   verblijf: pension in Fort William
 - nummer: 5
   titel: Spoor naar Mallaig
   beschrijving: De kustlijn passeert het Glenfinnanviaduct en eindigt bij de vissershaven van Mallaig.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: trein
   verblijf: guesthouse in Mallaig
 - nummer: 6
   titel: Veerboot en Skye
   beschrijving: We steken over naar Armadale en verkennen het zuidelijke schiereiland van Skye.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: veerboot en lijnbus
   verblijf: hotel op Skye
 - nummer: 7
   titel: Terug naar Glasgow
   beschrijving: Bus en trein voeren langs Loch Ness en de Great Glen terug naar Glasgow.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: lijnbus en trein
   verblijf: hotel in Glasgow
 - nummer: 8
   titel: Thuisreis
   beschrijving: Via Londen keren we per dagtrein terug naar Nederland.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: intercity en Eurostar
   verblijf: geen overnachting
 vertrekdata:
-- datum: 2027-06-08
+- bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
+  datum: 2027-06-08
   prijsstaffels:
   - omschrijving: 'Schotse Hooglanden per spoor: plek in een gedeelde tweepersoonskamer'
     prijs: 1185
