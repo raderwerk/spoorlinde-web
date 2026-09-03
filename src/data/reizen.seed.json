@@ -1,0 +1,950 @@
+[
+  {
+    "slug": "baltische-stedenlijn",
+    "titel": "Baltische stedenlijn",
+    "land": "Estland, Letland en Litouwen",
+    "samenvatting": "Drie hoofdsteden verbonden met trein en lijnbus.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Aankomst in Vilnius",
+        "beschrijving": "Na aankomst wandelen we langs de barokke kerken en binnenplaatsen van de oude stad.",
+        "vervoer": "trein en te voet",
+        "verblijf": "hotel in Vilnius"
+      },
+      {
+        "nummer": 2,
+        "titel": "Vilnius in lagen",
+        "beschrijving": "Een lokale gids verbindt het middeleeuwse centrum met de republiek Užupis en de markt bij het station.",
+        "vervoer": "te voet",
+        "verblijf": "hotel in Vilnius"
+      },
+      {
+        "nummer": 3,
+        "titel": "Via Kaunas naar Riga",
+        "beschrijving": "De ochtendtrein rijdt naar Kaunas; daarna brengt de lijnbus ons over de grens naar Riga.",
+        "vervoer": "trein en lijnbus",
+        "verblijf": "hotel in Riga"
+      },
+      {
+        "nummer": 4,
+        "titel": "Art nouveau in Riga",
+        "beschrijving": "We bekijken de jugendstilstraten, de centrale markt en de houten huizen aan de Daugava.",
+        "vervoer": "tram en te voet",
+        "verblijf": "hotel in Riga"
+      },
+      {
+        "nummer": 5,
+        "titel": "Langs de kust naar Tallinn",
+        "beschrijving": "Een lijnbus volgt de Baltische kust noordwaarts, met een pauze in badplaats Pärnu.",
+        "vervoer": "lijnbus",
+        "verblijf": "hotel in Tallinn"
+      },
+      {
+        "nummer": 6,
+        "titel": "Tallinn en Kadriorg",
+        "beschrijving": "De ommuurde bovenstad en het groene Kadriorgpark vullen een rustige slotdag.",
+        "vervoer": "tram en te voet",
+        "verblijf": "hotel in Tallinn"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-06-05",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Baltische stedenlijn: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1045
+          },
+          {
+            "omschrijving": "Baltische stedenlijn: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1285
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 6,
+    "maanden": [
+      6
+    ],
+    "prijsVanaf": 1045,
+    "body": "Drie hoofdsteden verbonden met trein en lijnbus.\n\nTijdens deze reis volgen we 6 dagen lang een afwisselende route door Estland, Letland en Litouwen. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "bohemen-en-moravie",
+    "titel": "Bohemen en Moravië",
+    "land": "Tsjechië",
+    "samenvatting": "Historische steden en rustige wijnheuvels per regionale trein.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Nachttrein naar Praag",
+        "beschrijving": "We stappen ’s avonds in en ontwaken bij de heuvels rond Praag.",
+        "vervoer": "nachttrein",
+        "verblijf": "slaaprijtuig"
+      },
+      {
+        "nummer": 2,
+        "titel": "Praag buiten de hoofdstraten",
+        "beschrijving": "Vanaf Vyšehrad lopen we langs de Moldau naar de passages van de Nieuwe Stad.",
+        "vervoer": "tram en te voet",
+        "verblijf": "hotel in Praag"
+      },
+      {
+        "nummer": 3,
+        "titel": "Regionaal spoor naar Tábor",
+        "beschrijving": "De trein volgt de Vltava; in Tábor verkennen we stegen en het marktplein.",
+        "vervoer": "regionale trein",
+        "verblijf": "pension in Tábor"
+      },
+      {
+        "nummer": 4,
+        "titel": "Door naar Brno",
+        "beschrijving": "Na een korte ochtendwandeling reizen we oostwaarts naar de Moravische hoofdstad.",
+        "vervoer": "trein en tram",
+        "verblijf": "hotel in Brno"
+      },
+      {
+        "nummer": 5,
+        "titel": "Wijnpaden van Mikulov",
+        "beschrijving": "Een lokale trein brengt ons naar Mikulov voor een wandeling tussen kalkheuvels en wijngaarden.",
+        "vervoer": "regionale trein en te voet",
+        "verblijf": "pension in Mikulov"
+      },
+      {
+        "nummer": 6,
+        "titel": "Lednice en terugreis",
+        "beschrijving": "We bezoeken het parklandschap van Lednice voordat de treinreis naar huis begint.",
+        "vervoer": "bus en trein",
+        "verblijf": "nachttrein"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-04-17",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Bohemen en Moravië: plek in een gedeelde tweepersoonskamer",
+            "prijs": 895
+          },
+          {
+            "omschrijving": "Bohemen en Moravië: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1135
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 6,
+    "maanden": [
+      4
+    ],
+    "prijsVanaf": 895,
+    "body": "Historische steden en rustige wijnheuvels per regionale trein.\n\nTijdens deze reis volgen we 6 dagen lang een afwisselende route door Tsjechië. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "dolomieten-per-nachttrein",
+    "titel": "Dolomieten per nachttrein",
+    "land": "Italië",
+    "samenvatting": "Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Nachttrein naar Innsbruck",
+        "beschrijving": "We vertrekken ’s avonds per nachttrein en zien bij het ontbijt de eerste Alpenpassen.",
+        "vervoer": "nachttrein",
+        "verblijf": "slaaprijtuig"
+      },
+      {
+        "nummer": 2,
+        "titel": "Bolzano en de Ritten",
+        "beschrijving": "Via de Brenner bereiken we Bolzano en nemen de kabelbaan naar het plateau van de Ritten.",
+        "vervoer": "regionale trein en kabelbaan",
+        "verblijf": "familiehotel in Bolzano"
+      },
+      {
+        "nummer": 3,
+        "titel": "Alpenweiden van Seiser Alm",
+        "beschrijving": "Een geleidelijke wandeling voert over alpenweiden met zicht op Schlern en Langkofel.",
+        "vervoer": "bus en te voet",
+        "verblijf": "berghotel op de Seiser Alm"
+      },
+      {
+        "nummer": 4,
+        "titel": "Val Gardena",
+        "beschrijving": "We dalen af naar Ortisei en volgen een bosroute langs oude boerderijen in het dal.",
+        "vervoer": "bus en te voet",
+        "verblijf": "pension in Ortisei"
+      },
+      {
+        "nummer": 5,
+        "titel": "Kastelen rond Merano",
+        "beschrijving": "De trein brengt ons naar Merano voor een vlak pad langs irrigatiekanalen en kastelen.",
+        "vervoer": "regionale trein en te voet",
+        "verblijf": "hotel in Merano"
+      },
+      {
+        "nummer": 6,
+        "titel": "Via de Brenner naar huis",
+        "beschrijving": "Na een vrije ochtend keren we via Innsbruck en de Rijnroute terug.",
+        "vervoer": "trein en nachttrein",
+        "verblijf": "nachttrein"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-05-14",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Dolomieten per nachttrein: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1295
+          },
+          {
+            "omschrijving": "Dolomieten per nachttrein: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1535
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 6,
+    "maanden": [
+      5
+    ],
+    "prijsVanaf": 1295,
+    "body": "Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.\n\nTijdens deze reis volgen we 6 dagen lang een afwisselende route door Italië. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "noorse-fjordenlijn",
+    "titel": "Noorse fjordenlijn",
+    "land": "Noorwegen",
+    "samenvatting": "Een spoorroute van Oslo naar Bergen met uitzicht op het fjordenlandschap.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Oslo aan het water",
+        "beschrijving": "Vanaf het station lopen we via de opera naar de eilandenkade en de nieuwe bibliotheek.",
+        "vervoer": "trein en te voet",
+        "verblijf": "hotel in Oslo"
+      },
+      {
+        "nummer": 2,
+        "titel": "Bergensbanen naar Geilo",
+        "beschrijving": "De spoorlijn klimt langs bossen en meren naar het bergstation van Geilo.",
+        "vervoer": "trein",
+        "verblijf": "hotel in Geilo"
+      },
+      {
+        "nummer": 3,
+        "titel": "Over de Hardangervidda",
+        "beschrijving": "We reizen over de boomgrens naar Myrdal en dalen met de Flåmsbana af door het dal.",
+        "vervoer": "trein",
+        "verblijf": "hotel in Flåm"
+      },
+      {
+        "nummer": 4,
+        "titel": "Aurlandsfjord",
+        "beschrijving": "Een stille boottocht toont de steile oevers; later wandelen we naar een uitzichtpunt boven Flåm.",
+        "vervoer": "boot en te voet",
+        "verblijf": "hotel in Flåm"
+      },
+      {
+        "nummer": 5,
+        "titel": "Naar Bergen",
+        "beschrijving": "Boot en trein verbinden de fjord met Bergen, waar we langs de houten pakhuizen van Bryggen lopen.",
+        "vervoer": "boot en trein",
+        "verblijf": "hotel in Bergen"
+      },
+      {
+        "nummer": 6,
+        "titel": "Bergen vanaf de heuvel",
+        "beschrijving": "De kabelspoorbaan brengt ons naar Fløyen voor een korte boswandeling voor vertrek.",
+        "vervoer": "kabelspoorbaan en te voet",
+        "verblijf": "hotel in Bergen"
+      },
+      {
+        "nummer": 7,
+        "titel": "Terug via Oslo",
+        "beschrijving": "De dagtrein doorkruist opnieuw het berglandschap en sluit aan op de terugreis.",
+        "vervoer": "trein",
+        "verblijf": "nachttrein"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-06-19",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Noorse fjordenlijn: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1495
+          },
+          {
+            "omschrijving": "Noorse fjordenlijn: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1735
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 7,
+    "maanden": [
+      6
+    ],
+    "prijsVanaf": 1495,
+    "body": "Een spoorroute van Oslo naar Bergen met uitzicht op het fjordenlandschap.\n\nTijdens deze reis volgen we 7 dagen lang een afwisselende route door Noorwegen. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "poolse-bergen-en-hanzesteden",
+    "titel": "Poolse bergen en Hanzesteden",
+    "land": "Polen",
+    "samenvatting": "Krakau, het Tatragebergte en Gdańsk in één treinroute.",
+    "moeilijkheid": "uitdagend",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Nachttrein naar Krakau",
+        "beschrijving": "We reizen oostwaarts en komen in de ochtend aan bij de Planty-parken van Krakau.",
+        "vervoer": "nachttrein",
+        "verblijf": "slaaprijtuig"
+      },
+      {
+        "nummer": 2,
+        "titel": "Krakau en Kazimierz",
+        "beschrijving": "Een stadswandeling verbindt de Wawelheuvel, oude handelshallen en de wijk Kazimierz.",
+        "vervoer": "tram en te voet",
+        "verblijf": "hotel in Krakau"
+      },
+      {
+        "nummer": 3,
+        "titel": "Naar Zakopane",
+        "beschrijving": "De regionale trein klimt naar de voet van de Tatra; na aankomst verkennen we het dorp.",
+        "vervoer": "regionale trein",
+        "verblijf": "pension in Zakopane"
+      },
+      {
+        "nummer": 4,
+        "titel": "Tatradal Kościeliska",
+        "beschrijving": "We volgen een stenig dalpad langs kalkrotsen en berghutten, met voldoende rustmomenten.",
+        "vervoer": "bus en te voet",
+        "verblijf": "pension in Zakopane"
+      },
+      {
+        "nummer": 5,
+        "titel": "Dwars door Polen",
+        "beschrijving": "Een lange treinrit voert via Krakau en Warschau naar de Baltische kust.",
+        "vervoer": "intercity",
+        "verblijf": "hotel in Gdańsk"
+      },
+      {
+        "nummer": 6,
+        "titel": "Hanzestad Gdańsk",
+        "beschrijving": "We wandelen langs pakhuizen, stadspoorten en de Motława en bezoeken de scheepswerfbuurt.",
+        "vervoer": "tram en te voet",
+        "verblijf": "hotel in Gdańsk"
+      },
+      {
+        "nummer": 7,
+        "titel": "Sopot en de Oostzee",
+        "beschrijving": "De voorstadstrein rijdt naar Sopot voor een kustwandeling over boulevard en strand.",
+        "vervoer": "stadstrein en te voet",
+        "verblijf": "hotel in Gdańsk"
+      },
+      {
+        "nummer": 8,
+        "titel": "Terug via Berlijn",
+        "beschrijving": "Via Poznań en Berlijn reizen we met dagtreinen terug naar Nederland.",
+        "vervoer": "intercity",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-08-07",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Poolse bergen en Hanzesteden: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1245
+          },
+          {
+            "omschrijving": "Poolse bergen en Hanzesteden: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1485
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 8,
+    "maanden": [
+      8
+    ],
+    "prijsVanaf": 1245,
+    "body": "Krakau, het Tatragebergte en Gdańsk in één treinroute.\n\nTijdens deze reis volgen we 8 dagen lang een afwisselende route door Polen. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "portugese-dourovallei",
+    "titel": "Portugese Dourovallei",
+    "land": "Portugal",
+    "samenvatting": "Van Porto langs de Douro naar wijndorpen en rivierterrassen.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Trein naar Parijs",
+        "beschrijving": "De reis begint met dagtreinen naar Parijs en tijd voor een diner nabij het station.",
+        "vervoer": "hogesnelheidstrein",
+        "verblijf": "hotel in Parijs"
+      },
+      {
+        "nummer": 2,
+        "titel": "Via Spanje naar Porto",
+        "beschrijving": "We steken per trein het Iberisch schiereiland over en bereiken Porto in de avond.",
+        "vervoer": "trein",
+        "verblijf": "hotel in Porto"
+      },
+      {
+        "nummer": 3,
+        "titel": "Porto aan de Douro",
+        "beschrijving": "Vanaf São Bento dalen we langs betegelde gevels af naar de kades van Ribeira.",
+        "vervoer": "metro en te voet",
+        "verblijf": "hotel in Porto"
+      },
+      {
+        "nummer": 4,
+        "titel": "Dourospoor naar Pinhão",
+        "beschrijving": "De regionale trein volgt de rivier langs terrassen en kleine stations tot Pinhão.",
+        "vervoer": "regionale trein",
+        "verblijf": "quinta bij Pinhão"
+      },
+      {
+        "nummer": 5,
+        "titel": "Wijngaardpaden",
+        "beschrijving": "Een rustige rondwandeling loopt tussen stenen muren, olijfbomen en uitzichtpunten boven de Douro.",
+        "vervoer": "te voet",
+        "verblijf": "quinta bij Pinhão"
+      },
+      {
+        "nummer": 6,
+        "titel": "Rivierdorpen",
+        "beschrijving": "Per lokale boot en trein bezoeken we een tweede dorp aan de bovenloop van de rivier.",
+        "vervoer": "boot en trein",
+        "verblijf": "hotel in Peso da Régua"
+      },
+      {
+        "nummer": 7,
+        "titel": "Terug naar Porto",
+        "beschrijving": "We reizen stroomafwaarts en houden een vrije middag voor de markthal en tuinen.",
+        "vervoer": "regionale trein",
+        "verblijf": "hotel in Porto"
+      },
+      {
+        "nummer": 8,
+        "titel": "Terugreis",
+        "beschrijving": "Dagtreinen brengen ons via Vigo en Parijs terug naar Nederland.",
+        "vervoer": "trein",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-09-18",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Portugese Dourovallei: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1275
+          },
+          {
+            "omschrijving": "Portugese Dourovallei: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1515
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 8,
+    "maanden": [
+      9
+    ],
+    "prijsVanaf": 1275,
+    "body": "Van Porto langs de Douro naar wijndorpen en rivierterrassen.\n\nTijdens deze reis volgen we 8 dagen lang een afwisselende route door Portugal. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "pyreneeen-van-kust-tot-kust",
+    "titel": "Pyreneeën van kust tot kust",
+    "land": "Frankrijk en Spanje",
+    "samenvatting": "Bergtreinen verbinden de Atlantische en mediterrane kust.",
+    "moeilijkheid": "uitdagend",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Naar Bayonne",
+        "beschrijving": "Hogesnelheidstreinen brengen ons via Parijs naar de Atlantische rand van de Pyreneeën.",
+        "vervoer": "hogesnelheidstrein",
+        "verblijf": "hotel in Bayonne"
+      },
+      {
+        "nummer": 2,
+        "titel": "Baskische kust",
+        "beschrijving": "Een lokale trein rijdt naar Saint-Jean-de-Luz voor een wandeling langs haven en kliffen.",
+        "vervoer": "regionale trein en te voet",
+        "verblijf": "hotel in Bayonne"
+      },
+      {
+        "nummer": 3,
+        "titel": "Landinwaarts naar Pau",
+        "beschrijving": "Via de uitlopers reizen we naar Pau en lopen over de boulevard met zicht op de bergketen.",
+        "vervoer": "trein",
+        "verblijf": "hotel in Pau"
+      },
+      {
+        "nummer": 4,
+        "titel": "Gele trein naar Cerdagne",
+        "beschrijving": "Na een vroege verbinding stappen we over op de smalspoortrein door het Têtdal.",
+        "vervoer": "trein en smalspoortrein",
+        "verblijf": "hotel in Mont-Louis"
+      },
+      {
+        "nummer": 5,
+        "titel": "Over de grens",
+        "beschrijving": "Een bergwandeling en korte treinrit voeren naar Puigcerdà aan de Spaanse zijde.",
+        "vervoer": "trein en te voet",
+        "verblijf": "pension in Puigcerdà"
+      },
+      {
+        "nummer": 6,
+        "titel": "Afdaling naar Barcelona",
+        "beschrijving": "De regionale lijn daalt langzaam van hoogvlakte naar de mediterrane kust.",
+        "vervoer": "regionale trein",
+        "verblijf": "hotel in Barcelona"
+      },
+      {
+        "nummer": 7,
+        "titel": "Barcelona per wijk",
+        "beschrijving": "We verbinden de markten van Gràcia met de haven via rustige straten en stadsparken.",
+        "vervoer": "metro en te voet",
+        "verblijf": "hotel in Barcelona"
+      },
+      {
+        "nummer": 8,
+        "titel": "Langs de kust naar huis",
+        "beschrijving": "Na een ochtend aan zee begint de treinreis via Lyon naar Nederland.",
+        "vervoer": "hogesnelheidstrein",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-07-03",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Pyreneeën van kust tot kust: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1395
+          },
+          {
+            "omschrijving": "Pyreneeën van kust tot kust: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1635
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 8,
+    "maanden": [
+      7
+    ],
+    "prijsVanaf": 1395,
+    "body": "Bergtreinen verbinden de Atlantische en mediterrane kust.\n\nTijdens deze reis volgen we 8 dagen lang een afwisselende route door Frankrijk en Spanje. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "saksen-stoom-en-zandsteen",
+    "titel": "Saksen: stoom en zandsteen",
+    "land": "Duitsland",
+    "samenvatting": "Dresden, smalspoor en wandelpaden in Saksisch Zwitserland.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Intercity naar Dresden",
+        "beschrijving": "Via Hannover en Leipzig bereiken we Dresden en wandelen langs de Elbe naar de oude stad.",
+        "vervoer": "intercity en te voet",
+        "verblijf": "hotel in Dresden"
+      },
+      {
+        "nummer": 2,
+        "titel": "Dresdens beide oevers",
+        "beschrijving": "We bekijken de herbouwde binnenstad en steken over naar de ateliers van de Neustadt.",
+        "vervoer": "tram en te voet",
+        "verblijf": "hotel in Dresden"
+      },
+      {
+        "nummer": 3,
+        "titel": "Stoomtrein naar Moritzburg",
+        "beschrijving": "De smalspoortrein rijdt door bossen naar het slot en de vijvers van Moritzburg.",
+        "vervoer": "stoomtrein en te voet",
+        "verblijf": "hotel in Dresden"
+      },
+      {
+        "nummer": 4,
+        "titel": "Saksisch Zwitserland",
+        "beschrijving": "De S-Bahn volgt de Elbe naar Rathen, startpunt van het pad naar de Bastei.",
+        "vervoer": "stadstrein en te voet",
+        "verblijf": "pension in Bad Schandau"
+      },
+      {
+        "nummer": 5,
+        "titel": "Elbedorpen",
+        "beschrijving": "Een veerpont en een vlak oeverpad verbinden kleine zandsteendorpen rond Bad Schandau.",
+        "vervoer": "veerpont en te voet",
+        "verblijf": "pension in Bad Schandau"
+      },
+      {
+        "nummer": 6,
+        "titel": "Via Leipzig terug",
+        "beschrijving": "We reizen naar Leipzig voor een middag rond de passages, waarna de thuisreis begint.",
+        "vervoer": "trein",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-04-24",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Saksen: stoom en zandsteen: plek in een gedeelde tweepersoonskamer",
+            "prijs": 825
+          },
+          {
+            "omschrijving": "Saksen: stoom en zandsteen: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1065
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 6,
+    "maanden": [
+      4
+    ],
+    "prijsVanaf": 825,
+    "body": "Dresden, smalspoor en wandelpaden in Saksisch Zwitserland.\n\nTijdens deze reis volgen we 6 dagen lang een afwisselende route door Duitsland. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "schotse-hooglanden-per-spoor",
+    "titel": "Schotse Hooglanden per spoor",
+    "land": "Schotland",
+    "samenvatting": "Langs meren en dalen met de West Highland Line.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Via Londen naar Glasgow",
+        "beschrijving": "Treinen via Londen brengen ons naar Glasgow, met uitzicht op de heuvels van Cumbria.",
+        "vervoer": "Eurostar en intercity",
+        "verblijf": "hotel in Glasgow"
+      },
+      {
+        "nummer": 2,
+        "titel": "Glasgow architectuur",
+        "beschrijving": "We wandelen van de Victoriaanse binnenstad naar de universiteit en de oevers van de Clyde.",
+        "vervoer": "metro en te voet",
+        "verblijf": "hotel in Glasgow"
+      },
+      {
+        "nummer": 3,
+        "titel": "West Highland Line",
+        "beschrijving": "De trein slingert langs Loch Lomond en Rannoch Moor naar Fort William.",
+        "vervoer": "trein",
+        "verblijf": "pension in Fort William"
+      },
+      {
+        "nummer": 4,
+        "titel": "Glen Nevis",
+        "beschrijving": "Een dalwandeling volgt de rivier en watervallen zonder de steile top van Ben Nevis te beklimmen.",
+        "vervoer": "lokale bus en te voet",
+        "verblijf": "pension in Fort William"
+      },
+      {
+        "nummer": 5,
+        "titel": "Spoor naar Mallaig",
+        "beschrijving": "De kustlijn passeert het Glenfinnanviaduct en eindigt bij de vissershaven van Mallaig.",
+        "vervoer": "trein",
+        "verblijf": "guesthouse in Mallaig"
+      },
+      {
+        "nummer": 6,
+        "titel": "Veerboot en Skye",
+        "beschrijving": "We steken over naar Armadale en verkennen het zuidelijke schiereiland van Skye.",
+        "vervoer": "veerboot en lijnbus",
+        "verblijf": "hotel op Skye"
+      },
+      {
+        "nummer": 7,
+        "titel": "Terug naar Glasgow",
+        "beschrijving": "Bus en trein voeren langs Loch Ness en de Great Glen terug naar Glasgow.",
+        "vervoer": "lijnbus en trein",
+        "verblijf": "hotel in Glasgow"
+      },
+      {
+        "nummer": 8,
+        "titel": "Thuisreis",
+        "beschrijving": "Via Londen keren we per dagtrein terug naar Nederland.",
+        "vervoer": "intercity en Eurostar",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-06-08",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Schotse Hooglanden per spoor: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1185
+          },
+          {
+            "omschrijving": "Schotse Hooglanden per spoor: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1425
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 8,
+    "maanden": [
+      6
+    ],
+    "prijsVanaf": 1185,
+    "body": "Langs meren en dalen met de West Highland Line.\n\nTijdens deze reis volgen we 8 dagen lang een afwisselende route door Schotland. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "slovenie-groen-en-gastvrij",
+    "titel": "Slovenië groen en gastvrij",
+    "land": "Slovenië",
+    "samenvatting": "Van Ljubljana naar het meer van Bohinj via kleinschalige verblijven.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Dagtrein naar München",
+        "beschrijving": "We reizen langs de Rijn en overnachten in München voor de verbinding door de Alpen.",
+        "vervoer": "intercity",
+        "verblijf": "hotel in München"
+      },
+      {
+        "nummer": 2,
+        "titel": "Door de Alpen naar Ljubljana",
+        "beschrijving": "Via Villach bereiken we Ljubljana en maken een avondwandeling langs de Ljubljanica.",
+        "vervoer": "trein",
+        "verblijf": "stadshotel in Ljubljana"
+      },
+      {
+        "nummer": 3,
+        "titel": "Ljubljana op de fiets",
+        "beschrijving": "Een lokale gids leidt ons langs de markt, Tivoli en rustige buurten buiten het centrum.",
+        "vervoer": "fiets",
+        "verblijf": "stadshotel in Ljubljana"
+      },
+      {
+        "nummer": 4,
+        "titel": "Spoorlijn naar Bohinj",
+        "beschrijving": "De trein rijdt door tunnels en de vallei van de Sava Bohinjka naar het meer.",
+        "vervoer": "regionale trein en bus",
+        "verblijf": "pension bij Bohinj"
+      },
+      {
+        "nummer": 5,
+        "titel": "Oeverpad en waterval",
+        "beschrijving": "We volgen de noordelijke oever en nemen de bus naar het pad richting de Savicawaterval.",
+        "vervoer": "bus en te voet",
+        "verblijf": "pension bij Bohinj"
+      },
+      {
+        "nummer": 6,
+        "titel": "Via Bled naar Radovljica",
+        "beschrijving": "Een korte treinrit en wandeling verbinden het meer van Bled met de oude kern van Radovljica.",
+        "vervoer": "trein en te voet",
+        "verblijf": "familiehotel in Radovljica"
+      },
+      {
+        "nummer": 7,
+        "titel": "Terug door Oostenrijk",
+        "beschrijving": "Via Villach en München begint de comfortabele treinreis naar huis.",
+        "vervoer": "trein",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-05-22",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Slovenië groen en gastvrij: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1095
+          },
+          {
+            "omschrijving": "Slovenië groen en gastvrij: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1335
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 7,
+    "maanden": [
+      5
+    ],
+    "prijsVanaf": 1095,
+    "body": "Van Ljubljana naar het meer van Bohinj via kleinschalige verblijven.\n\nTijdens deze reis volgen we 7 dagen lang een afwisselende route door Slovenië. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "transsylvanie-per-nachttrein",
+    "titel": "Transsylvanië per nachttrein",
+    "land": "Roemenië",
+    "samenvatting": "Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Trein naar Boedapest",
+        "beschrijving": "Overdag reizen we via Duitsland en Oostenrijk naar Boedapest.",
+        "vervoer": "intercity",
+        "verblijf": "hotel in Boedapest"
+      },
+      {
+        "nummer": 2,
+        "titel": "Nachttrein over de grens",
+        "beschrijving": "Na een vrije ochtend stappen we op de nachttrein die door Hongarije naar Brașov rijdt.",
+        "vervoer": "nachttrein",
+        "verblijf": "slaaprijtuig"
+      },
+      {
+        "nummer": 3,
+        "titel": "Brașov en de Tâmpa",
+        "beschrijving": "We lopen door de Saksische binnenstad en nemen het bospad naar een lager uitzichtpunt.",
+        "vervoer": "te voet",
+        "verblijf": "gasthuis in Brașov"
+      },
+      {
+        "nummer": 4,
+        "titel": "Regionaal naar Sighișoara",
+        "beschrijving": "De trein volgt valleien naar de ommuurde bovenstad met haar kleurige huizen.",
+        "vervoer": "regionale trein",
+        "verblijf": "pension in Sighișoara"
+      },
+      {
+        "nummer": 5,
+        "titel": "Dorpen van de Târnava",
+        "beschrijving": "Een lokale gids neemt ons per minibus mee naar weerkerken en kleinschalige boerderijen.",
+        "vervoer": "minibus en te voet",
+        "verblijf": "pension in Sighișoara"
+      },
+      {
+        "nummer": 6,
+        "titel": "Naar Sibiu",
+        "beschrijving": "Via Mediaș reizen we naar Sibiu en verkennen de pleinen en doorgangen van de oude stad.",
+        "vervoer": "regionale trein",
+        "verblijf": "hotel in Sibiu"
+      },
+      {
+        "nummer": 7,
+        "titel": "Nachttrein westwaarts",
+        "beschrijving": "Na een marktbezoek vertrekt de avondtrein via Boedapest richting Oostenrijk.",
+        "vervoer": "nachttrein",
+        "verblijf": "slaaprijtuig"
+      },
+      {
+        "nummer": 8,
+        "titel": "Terug naar Nederland",
+        "beschrijving": "In Wenen stappen we over op dagtreinen voor het laatste deel van de reis.",
+        "vervoer": "intercity",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-09-10",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Transsylvanië per nachttrein: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1195
+          },
+          {
+            "omschrijving": "Transsylvanië per nachttrein: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1435
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 8,
+    "maanden": [
+      9
+    ],
+    "prijsVanaf": 1195,
+    "body": "Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten.\n\nTijdens deze reis volgen we 8 dagen lang een afwisselende route door Roemenië. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  },
+  {
+    "slug": "zwitserse-merenroute",
+    "titel": "Zwitserse merenroute",
+    "land": "Zwitserland",
+    "samenvatting": "Een ontspannen treinreis langs vier meren en historische stadskernen.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Intercity naar Basel",
+        "beschrijving": "Langs de Rijn reizen we naar Basel en wandelen naar de veerpontjes in de oude stad.",
+        "vervoer": "intercity en te voet",
+        "verblijf": "hotel in Basel"
+      },
+      {
+        "nummer": 2,
+        "titel": "Luzern en het meer",
+        "beschrijving": "De trein brengt ons naar Luzern voor een boottocht langs de oevers van het Vierwoudstrekenmeer.",
+        "vervoer": "trein en boot",
+        "verblijf": "hotel in Luzern"
+      },
+      {
+        "nummer": 3,
+        "titel": "Over de Brünigpas",
+        "beschrijving": "De panoramische regionale trein klimt naar de pas en daalt af naar het Brienzermeer.",
+        "vervoer": "regionale trein",
+        "verblijf": "hotel in Interlaken"
+      },
+      {
+        "nummer": 4,
+        "titel": "Meren van Thun en Brienz",
+        "beschrijving": "Per boot en lokale trein verbinden we beide meren met tijd voor een vlak oeverpad.",
+        "vervoer": "boot en trein",
+        "verblijf": "hotel in Interlaken"
+      },
+      {
+        "nummer": 5,
+        "titel": "Naar Lausanne",
+        "beschrijving": "Via Bern reizen we naar het Meer van Genève en wandelen door de wijngaarden bij Lavaux.",
+        "vervoer": "intercity en te voet",
+        "verblijf": "hotel in Lausanne"
+      },
+      {
+        "nummer": 6,
+        "titel": "Terug via Basel",
+        "beschrijving": "Een vrije ochtend aan het water gaat vooraf aan de directe treinreis naar Nederland.",
+        "vervoer": "intercity",
+        "verblijf": "geen overnachting"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-05-01",
+        "prijsstaffels": [
+          {
+            "omschrijving": "Zwitserse merenroute: plek in een gedeelde tweepersoonskamer",
+            "prijs": 1325
+          },
+          {
+            "omschrijving": "Zwitserse merenroute: eigen eenpersoonskamer gedurende de route",
+            "prijs": 1565
+          }
+        ]
+      }
+    ],
+    "duurInDagen": 6,
+    "maanden": [
+      5
+    ],
+    "prijsVanaf": 1325,
+    "body": "Een ontspannen treinreis langs vier meren en historische stadskernen.\n\nTijdens deze reis volgen we 6 dagen lang een afwisselende route door Zwitserland. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.\n\nHet dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd."
+  }
+]

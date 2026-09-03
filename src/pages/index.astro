@@ -18,7 +18,8 @@ const reizen = await getCollection("reizen");
         <li class="trip-card">
           <a href={sitePath(`reizen/${reis.slug}`)}>{reis.data.titel}</a>
           <p>
-            {reis.data.land} · {reis.data.duurInDagen} dagen · vanaf €{reis.data.prijsVanaf}
+            {reis.data.land} · {reis.data.duurInDagen} dagen · vanaf €{reis.data.prijsVanaf} ·{" "}
+            {reis.data.moeilijkheid}
           </p>
           <p>{reis.data.samenvatting}</p>
           <p>
