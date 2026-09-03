@@ -1,16 +1,42 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { copyFile, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { spawnSync } from "node:child_process";
 
-const pagina = await readFile("src/pages/reizen/[slug]/index.astro", "utf8");
-assert.match(pagina, /<details>/, "dagindeling gebruikt toetsenbordbedienbare details-elementen");
-assert.match(pagina, /loading="lazy"/, "beelden worden lazy-loaded");
-assert.doesNotMatch(pagina, /alt=[^\n>]*afbeelding van/i, "alt-teksten gebruiken niet de verboden aanhef");
-assert.match(pagina, /addEventListener\('click'/, "kaart laadt pas na interactie");
-assert.doesNotMatch(pagina, /https?:\/\//, "reisdetail bevat geen externe netwerkbron");
+const root = new URL("../", import.meta.url);
+const content = new URL("../src/content/reizen/dolomieten-per-nachttrein.md", import.meta.url);
+const invalidContent = new URL("../src/content/reizen/test-zonder-bron.md", import.meta.url);
 
-const pdf = await readFile("src/pages/reizen/[slug]/reisschema.pdf.ts", "utf8");
-assert.match(pdf, /regelsVoorPdf\(reis\)/, "pdf gebruikt dezelfde gestructureerde reisdata");
+function build() {
+  return spawnSync(process.platform === "win32" ? "npx.cmd" : "npx", ["astro", "build"], {
+    cwd: root,
+    env: { ...process.env, TZ: "America/New_York" },
+    encoding: "utf8",
+  });
+}
 
-const onvolledig = `dagen:\n  - nummer: 1\n    titel: test\n`;
-assert.equal(/bron:/.test(onvolledig), false, "foutpad detecteert content zonder bron");
-console.log("reisdetail: 7 controles geslaagd");
+const result = build();
+assert.equal(result.status, 0, `De reisdetailpagina's moeten bouwen:\n${result.stderr}`);
+
+const html = await readFile(new URL("../dist/reizen/dolomieten-per-nachttrein/index.html", import.meta.url), "utf8");
+assert.match(html, /<details(?:\s[^>]*)?>/, "De gebouwde dagindeling gebruikt toetsenbordbedienbare details-elementen");
+assert.match(html, /<caption(?:\s[^>]*)?>Vertrekmaand, kamertype en prijs per persoon<\/caption>/, "De gebouwde prijstabel heeft een duidelijke caption");
+assert.match(html, />mei 2027<\//, "De vertrekmaand blijft mei wanneer de build in America\/New_York draait");
+assert.doesNotMatch(html, />april 2027<\//, "De vertrekmaand verschuift niet met de tijdzone");
+assert.match(html, /id="kaart" tabindex="-1"/, "Het kaartdoel kan programmatisch focus ontvangen");
+assert.doesNotMatch(html, /route-landschap\.svg"[^>]*loading="lazy"/, "De LCP-kandidaat wordt niet lazy-loaded");
+assert.ok((await stat(new URL("../dist/reizen/dolomieten-per-nachttrein/reisschema.pdf", import.meta.url))).size > 1_000, "Het gebouwde pdf-reisschema is niet leeg");
+
+await copyFile(content, invalidContent);
+try {
+  const invalid = (await readFile(invalidContent, "utf8"))
+    .replace("titel: Dolomieten per nachttrein", "titel: Testreis zonder bron")
+    .replace(/^  bron:.*\n/m, "");
+  await writeFile(invalidContent, invalid);
+  const rejected = build();
+  assert.notEqual(rejected.status, 0, "Een echt contentbestand zonder verplichte bron moet worden afgewezen");
+  assert.match(`${rejected.stdout}\n${rejected.stderr}`, /bron/i, "De buildfout benoemt het ontbrekende bronveld");
+} finally {
+  await rm(invalidContent, { force: true });
+}
+
+console.log("Gebouwde reisdetailpagina, tijdzonevaste prijsmaand, pdf en foutpad zijn gecontroleerd.");

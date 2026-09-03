@@ -1,31 +1,73 @@
 ---
-titel: "Transsylvanië per nachttrein"
-land: "Roemenië"
-samenvatting: "Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten."
+titel: Transsylvanië per nachttrein
+land: Roemenië
+samenvatting: Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten.
 moeilijkheid: gemiddeld
 dagen:
-  - nummer: 1
-    titel: "Nachttrein naar Brașov"
-    beschrijving: "We reizen naar Roemenië en nemen tijd voor een eerste verkenning."
-    vervoer: "nachttrein"
-    bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "slaaprijtuig"
-  - nummer: 2
-    titel: "Brașov en de Tâmpa"
-    beschrijving: "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken."
-    vervoer: "te voet"
-    bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "gasthuis in Brașov"
+- nummer: 1
+  titel: Trein naar Boedapest
+  beschrijving: Overdag reizen we via Duitsland en Oostenrijk naar Boedapest.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: intercity
+  verblijf: hotel in Boedapest
+- nummer: 2
+  titel: Nachttrein over de grens
+  beschrijving: Na een vrije ochtend stappen we op de nachttrein die door Hongarije naar Brașov rijdt.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: nachttrein
+  verblijf: slaaprijtuig
+- nummer: 3
+  titel: Brașov en de Tâmpa
+  beschrijving: We lopen door de Saksische binnenstad en nemen het bospad naar een lager uitzichtpunt.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: te voet
+  verblijf: gasthuis in Brașov
+- nummer: 4
+  titel: Regionaal naar Sighișoara
+  beschrijving: De trein volgt valleien naar de ommuurde bovenstad met haar kleurige huizen.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: regionale trein
+  verblijf: pension in Sighișoara
+- nummer: 5
+  titel: Dorpen van de Târnava
+  beschrijving: Een lokale gids neemt ons per minibus mee naar weerkerken en kleinschalige boerderijen.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: minibus en te voet
+  verblijf: pension in Sighișoara
+- nummer: 6
+  titel: Naar Sibiu
+  beschrijving: Via Mediaș reizen we naar Sibiu en verkennen de pleinen en doorgangen van de oude stad.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: regionale trein
+  verblijf: hotel in Sibiu
+- nummer: 7
+  titel: Nachttrein westwaarts
+  beschrijving: Na een marktbezoek vertrekt de avondtrein via Boedapest richting Oostenrijk.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: nachttrein
+  verblijf: slaaprijtuig
+- nummer: 8
+  titel: Terug naar Nederland
+  beschrijving: In Wenen stappen we over op dagtreinen voor het laatste deel van de reis.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
+  vervoer: intercity
+  verblijf: geen overnachting
 vertrekdata:
-  - datum: 2027-09-10
-    bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
-    prijsstaffels:
-      - omschrijving: "per persoon, gedeelde tweepersoonskamer"
-        prijs: 1195
-      - omschrijving: "per persoon, eenpersoonskamer"
-        prijs: 1435
+- bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
+  datum: 2027-09-10
+  prijsstaffels:
+  - omschrijving: 'Transsylvanië per nachttrein: plek in een gedeelde tweepersoonskamer'
+    prijs: 1195
+  - omschrijving: 'Transsylvanië per nachttrein: eigen eenpersoonskamer gedurende de route'
+    prijs: 1435
+duurInDagen: 8
+maanden:
+- 9
+prijsVanaf: 1195
 ---
 
 Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten.
 
-De route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie.
+Tijdens deze reis volgen we 8 dagen lang een afwisselende route door Roemenië. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
+
+Het dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd.

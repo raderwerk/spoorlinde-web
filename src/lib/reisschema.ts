@@ -6,7 +6,7 @@ export const euro = (prijs: number) =>
   new Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(prijs);
 
 export const maand = (datum: Date) =>
-  new Intl.DateTimeFormat("nl-NL", { month: "long", year: "numeric" }).format(datum);
+  new Intl.DateTimeFormat("nl-NL", { month: "long", year: "numeric", timeZone: "UTC" }).format(datum);
 
 export function regelsVoorPdf(reis: Reis) {
   const regels = [reis.data.titel, reis.data.land, reis.data.samenvatting, `Niveau: ${reis.data.moeilijkheid}`, "", "Dag voor dag"];

@@ -14,7 +14,7 @@ const basis = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
     <nav aria-label="Kruimelpad"><a href={basis}>Alle reizen</a> <span aria-hidden="true">/</span> {reis.data.titel}</nav>
     <header class="hero">
       <div><p class="eyebrow">{reis.data.land} · {reis.data.dagen.length} dagen · {reis.data.moeilijkheid}</p><h1>{reis.data.titel}</h1><p class="intro">{reis.data.samenvatting}</p></div>
-      <img src={`${basis}images/route-landschap.svg`} loading="lazy" width="1200" height="600" alt={`Treinroute door het landschap van ${reis.data.land}`} />
+      <img src={`${basis}images/route-landschap.svg`} width="1200" height="600" alt={`Treinroute door het landschap van ${reis.data.land}`} />
     </header>
 
     <section aria-labelledby="dagen"><h2 id="dagen">Dag voor dag</h2><p>Open een dag om alle details en de gebruikte bron te lezen.</p>
@@ -25,7 +25,7 @@ const basis = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
       <a class="download" download href={`${basis}reizen/${reis.slug}/reisschema.pdf`}>Download dit reisschema als pdf</a>
     </section>
 
-    <section aria-labelledby="route"><h2 id="route">Routekaart</h2><p>De kaart staat op onze eigen site en wordt pas opgehaald wanneer je ervoor kiest.</p><button id="laad-kaart" type="button">Laad routekaart</button><div id="kaart" aria-live="polite"></div></section>
+    <section aria-labelledby="route"><h2 id="route">Routekaart</h2><p>De kaart staat op onze eigen site en wordt pas opgehaald wanneer je ervoor kiest.</p><button id="laad-kaart" type="button">Laad routekaart</button><div id="kaart" tabindex="-1" aria-live="polite"></div></section>
   </article>
   <script is:inline define:vars={{ kaartUrl: `${basis}images/routekaart.svg`, alt: `Schematische routekaart voor ${reis.data.titel}` }}>
     document.querySelector('#laad-kaart')?.addEventListener('click', (event) => {

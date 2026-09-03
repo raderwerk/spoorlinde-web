@@ -14,7 +14,7 @@ Spoorlinde is een **fictieve** klant in de Raderwerk-demo. Er bestaat geen echt 
 
 **Astro**, statisch gebouwd en gehost op GitHub Pages, met **Decap CMS** als redactionele interface.
 
-- De reizen zijn contentmodel-in-repo: Astro's content collections (`src/content/reizen`) geven elke reis een markdown-bestand met gevalideerde frontmatter (`src/content/config.ts`). Een redacteur voegt via `/admin/` een reis toe zonder code te wijzigen. De CMS-beheerder moet voor de previewomgeving de GitHub OAuth-proxy instellen; lokaal start je daarnaast `npx decap-server`.
+- De reizen zijn contentmodel-in-repo: Astro's content collections (`src/content/reizen`) geven elke reis een markdown-bestand met gevalideerde frontmatter (`src/content/config.ts`). Een redacteur voegt lokaal via `/admin/` een reis toe zonder code te wijzigen. De publieke Pages-build sluit `/admin/` uit totdat een betrouwbare GitHub OAuth-proxy beschikbaar is; lokaal start je `npx decap-server`.
 - Geen betalingen, geen serverstatus nodig voor de contentpagina's zelf: een statische build past bij "geen betalingen, wél een aanvraagformulier".
 - Bouwt met één commando, draait met één commando, deployt naar GitHub Pages zonder extra infrastructuur.
 
@@ -29,6 +29,7 @@ npm install
 npm run dev       # lokale server op http://localhost:4321
 npm run build     # typecheck + statische build naar dist/
 npm run test:content # controleert twaalf reizen plus een ongeldige reis
+npm test            # valideert content en de gebouwde reisdetailpagina's
 npm run preview   # de build lokaal bekijken
 ```
 
@@ -48,15 +49,20 @@ reis zonder vertrekdatum of zonder prijsstaffel niet worden gepubliceerd.
 | reis.titel | tekst | ja | Dolomieten per nachttrein |
 | reis.land | tekst | ja | Italië |
 | reis.samenvatting | tekst | ja | Treinreis naar Zuid-Tirol… |
+| reis.duurInDagen | positief geheel getal | ja | 6 |
+| reis.maanden | lijst van maandnummers | ja, minimaal 1 | 5 |
+| reis.prijsVanaf | positief geheel getal (euro) | ja | 1295 |
 | reis.moeilijkheid | keuze | ja | gemiddeld |
 | reis.dagen | lijst van dagen | ja, minimaal 1 | dag 1 |
 | dag.nummer | positief geheel getal | ja | 1 |
 | dag.titel | tekst | ja | Aankomst in Bolzano |
 | dag.beschrijving | tekst | ja | We verkennen de stad… |
 | dag.vervoer | tekst | ja | nachttrein en regionale trein |
+| dag.bron | tekst | ja | Klantdossier Spoorlinde — fictieve voorbeeldroute |
 | dag.verblijf | tekst | ja | familiehotel in Bolzano |
 | reis.vertrekdata | lijst van vertrekdata | ja, minimaal 1 | 2027-05-14 |
 | vertrek.datum | datum | ja | 2027-05-14 |
+| vertrek.bron | tekst | ja | Klantdossier Spoorlinde — fictieve prijsopgave 2027 |
 | vertrek.prijsstaffels | lijst van prijzen | ja, minimaal 1 | gedeelde kamer, € 1295 |
 | prijs.omschrijving | tekst | ja | per persoon, gedeelde kamer |
 | prijs.prijs | positief geheel getal (euro) | ja | 1295 |

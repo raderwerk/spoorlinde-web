@@ -19,6 +19,12 @@ jobs:
 
       - run: npm ci
 
+      - name: Validate journey content
+        run: npm run test:content
+
+      - name: Test journey detail output
+        run: npm run test:detail
+
       - name: Typecheck
         run: npx astro check
 
