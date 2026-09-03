@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { siteBase, sitePath } from "../lib/site-base";
 
 interface Props {
   titel: string;
@@ -7,7 +8,7 @@ interface Props {
 }
 
 const { titel, huidige } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const base = siteBase();
 ---
 
 <!doctype html>
@@ -23,7 +24,7 @@ const base = import.meta.env.BASE_URL;
       <a class="site-brand" href={base}>Spoorlinde</a>
       <nav class="site-nav" aria-label="Hoofd">
         <a href={base} aria-current={huidige === "reizen" ? "page" : undefined}>Reizen</a>
-        <a href={`${base}aanvraag`} aria-current={huidige === "aanvraag" ? "page" : undefined}
+        <a href={sitePath("aanvraag")} aria-current={huidige === "aanvraag" ? "page" : undefined}
           >Aanvraag</a
         >
       </nav>

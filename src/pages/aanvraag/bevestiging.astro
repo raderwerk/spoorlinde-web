@@ -1,6 +1,6 @@
 ---
 import Basis from "../../layouts/Basis.astro";
-const base = import.meta.env.BASE_URL;
+import { siteBase, sitePath } from "../../lib/site-base";
 ---
 
 <Basis titel="Bevestiging" huidige="aanvraag">
@@ -12,7 +12,9 @@ const base = import.meta.env.BASE_URL;
     <p>Je referentienummer:</p>
     <p class="confirm-ref" id="bevestiging-referentie">—</p>
     <p class="hint">Er is geen betaling gevraagd of uitgevoerd. Er is geen e-mail verstuurd.</p>
-    <p><a href={`${base}aanvraag`}>Nieuwe aanvraag</a> · <a href={base}>Terug naar de reizen</a></p>
+    <p>
+      <a href={sitePath("aanvraag")}>Nieuwe aanvraag</a> · <a href={siteBase()}>Terug naar de reizen</a>
+    </p>
   </section>
 </Basis>
 

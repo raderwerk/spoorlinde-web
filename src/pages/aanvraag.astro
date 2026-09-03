@@ -1,6 +1,7 @@
 ---
 import Basis from "../layouts/Basis.astro";
 import { getCollection } from "astro:content";
+import { siteBase } from "../lib/site-base";
 
 const reizen = await getCollection("reizen");
 const reisOpties = reizen.map((reis) => ({
@@ -11,7 +12,7 @@ const preselectedSlug = Astro.url.searchParams.get("reis") ?? "";
 const bootJson = JSON.stringify({
   reizen: reisOpties,
   preselectedSlug,
-  baseUrl: import.meta.env.BASE_URL,
+  baseUrl: siteBase(),
 });
 ---
 
@@ -30,7 +31,7 @@ const bootJson = JSON.stringify({
     <p>Je referentienummer:</p>
     <p class="confirm-ref" id="bevestiging-referentie"></p>
     <p class="hint">Er is geen betaling gevraagd of uitgevoerd.</p>
-    <p><a href={import.meta.env.BASE_URL}>Terug naar de reizen</a></p>
+    <p><a href={siteBase()}>Terug naar de reizen</a></p>
   </section>
 
   <div id="aanvraag-wizard">
@@ -105,9 +106,10 @@ const bootJson = JSON.stringify({
       </fieldset>
     </form>
   </div>
+
+  <script id="aanvraag-boot" type="application/json" is:inline set:html={bootJson}></script>
 </Basis>
 
-<script id="aanvraag-boot" type="application/json" is:inline set:html={bootJson}></script>
 <script>
   import { bindAanvraagForm } from "../lib/aanvraag/browser-form";
 
