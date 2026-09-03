@@ -1,31 +1,31 @@
 ---
-titel: "Dolomieten per nachttrein"
-land: "Italië"
-samenvatting: "Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen."
+titel: "Transsylvanië per nachttrein"
+land: "Roemenië"
+samenvatting: "Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten."
 moeilijkheid: gemiddeld
 dagen:
   - nummer: 1
-    titel: "Amsterdam naar Bolzano"
-    beschrijving: "We reizen naar Italië en nemen tijd voor een eerste verkenning."
-    vervoer: "nachttrein en regionale trein"
+    titel: "Nachttrein naar Brașov"
+    beschrijving: "We reizen naar Roemenië en nemen tijd voor een eerste verkenning."
+    vervoer: "nachttrein"
     bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "familiehotel in Bolzano"
+    verblijf: "slaaprijtuig"
   - nummer: 2
-    titel: "Wandeling rond de Seiser Alm"
+    titel: "Brașov en de Tâmpa"
     beschrijving: "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken."
-    vervoer: "bus en te voet"
+    vervoer: "te voet"
     bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "berghotel op de Seiser Alm"
+    verblijf: "gasthuis in Brașov"
 vertrekdata:
-  - datum: 2027-05-14
+  - datum: 2027-09-10
     bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
     prijsstaffels:
       - omschrijving: "per persoon, gedeelde tweepersoonskamer"
-        prijs: 1295
+        prijs: 1195
       - omschrijving: "per persoon, eenpersoonskamer"
-        prijs: 1535
+        prijs: 1435
 ---
 
-Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.
+Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten.
 
 De route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie.

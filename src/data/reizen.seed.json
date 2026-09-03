@@ -1,0 +1,470 @@
+[
+  {
+    "slug": "dolomieten-per-nachttrein",
+    "titel": "Dolomieten per nachttrein",
+    "land": "Italië",
+    "samenvatting": "Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Amsterdam naar Bolzano",
+        "beschrijving": "We reizen naar Italië en nemen tijd voor een eerste verkenning.",
+        "vervoer": "nachttrein en regionale trein",
+        "verblijf": "familiehotel in Bolzano"
+      },
+      {
+        "nummer": 2,
+        "titel": "Wandeling rond de Seiser Alm",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "bus en te voet",
+        "verblijf": "berghotel op de Seiser Alm"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-05-14",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1295
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1535
+          }
+        ]
+      }
+    ],
+    "body": "Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "schotse-hooglanden-per-spoor",
+    "titel": "Schotse Hooglanden per spoor",
+    "land": "Schotland",
+    "samenvatting": "Langs meren en dalen met de West Highland Line.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Trein naar Glasgow",
+        "beschrijving": "We reizen naar Schotland en nemen tijd voor een eerste verkenning.",
+        "vervoer": "Eurostar en intercity",
+        "verblijf": "hotel in Glasgow"
+      },
+      {
+        "nummer": 2,
+        "titel": "West Highland Line naar Fort William",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "trein",
+        "verblijf": "pension in Fort William"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-06-08",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1185
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1425
+          }
+        ]
+      }
+    ],
+    "body": "Langs meren en dalen met de West Highland Line.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "slovenie-groen-en-gastvrij",
+    "titel": "Slovenië groen en gastvrij",
+    "land": "Slovenië",
+    "samenvatting": "Van Ljubljana naar het meer van Bohinj via kleinschalige verblijven.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Aankomst in Ljubljana",
+        "beschrijving": "We reizen naar Slovenië en nemen tijd voor een eerste verkenning.",
+        "vervoer": "dagtrein",
+        "verblijf": "stadshotel in Ljubljana"
+      },
+      {
+        "nummer": 2,
+        "titel": "Bohinj en de Julische Alpen",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "bus en te voet",
+        "verblijf": "pension bij Bohinj"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-05-22",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1095
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1335
+          }
+        ]
+      }
+    ],
+    "body": "Van Ljubljana naar het meer van Bohinj via kleinschalige verblijven.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "noorse-fjordenlijn",
+    "titel": "Noorse fjordenlijn",
+    "land": "Noorwegen",
+    "samenvatting": "Een spoorroute van Oslo naar Bergen met uitzicht op het fjordenlandschap.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Oslo aan het water",
+        "beschrijving": "We reizen naar Noorwegen en nemen tijd voor een eerste verkenning.",
+        "vervoer": "trein",
+        "verblijf": "hotel in Oslo"
+      },
+      {
+        "nummer": 2,
+        "titel": "Bergensbanen en Flåm",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "trein",
+        "verblijf": "hotel in Flåm"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-06-19",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1495
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1735
+          }
+        ]
+      }
+    ],
+    "body": "Een spoorroute van Oslo naar Bergen met uitzicht op het fjordenlandschap.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "bohemen-en-moravie",
+    "titel": "Bohemen en Moravië",
+    "land": "Tsjechië",
+    "samenvatting": "Historische steden en rustige wijnheuvels per regionale trein.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Praag te voet",
+        "beschrijving": "We reizen naar Tsjechië en nemen tijd voor een eerste verkenning.",
+        "vervoer": "nachttrein",
+        "verblijf": "hotel in Praag"
+      },
+      {
+        "nummer": 2,
+        "titel": "Naar wijnstad Mikulov",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "trein",
+        "verblijf": "pension in Mikulov"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-04-17",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 895
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1135
+          }
+        ]
+      }
+    ],
+    "body": "Historische steden en rustige wijnheuvels per regionale trein.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "pyreneeen-van-kust-tot-kust",
+    "titel": "Pyreneeën van kust tot kust",
+    "land": "Frankrijk en Spanje",
+    "samenvatting": "Bergtreinen verbinden de Atlantische en mediterrane kust.",
+    "moeilijkheid": "uitdagend",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Naar Bayonne",
+        "beschrijving": "We reizen naar Frankrijk en Spanje en nemen tijd voor een eerste verkenning.",
+        "vervoer": "hogesnelheidstrein",
+        "verblijf": "hotel in Bayonne"
+      },
+      {
+        "nummer": 2,
+        "titel": "Over de Col de Puymorens",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "trein en te voet",
+        "verblijf": "berghotel in Latour-de-Carol"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-07-03",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1395
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1635
+          }
+        ]
+      }
+    ],
+    "body": "Bergtreinen verbinden de Atlantische en mediterrane kust.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "zwitserse-merenroute",
+    "titel": "Zwitserse merenroute",
+    "land": "Zwitserland",
+    "samenvatting": "Een ontspannen treinreis langs vier meren en historische stadskernen.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Basel en het Rijnpad",
+        "beschrijving": "We reizen naar Zwitserland en nemen tijd voor een eerste verkenning.",
+        "vervoer": "intercity",
+        "verblijf": "hotel in Basel"
+      },
+      {
+        "nummer": 2,
+        "titel": "Luzern en het Vierwoudstrekenmeer",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "trein en boot",
+        "verblijf": "hotel in Luzern"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-05-01",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1325
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1565
+          }
+        ]
+      }
+    ],
+    "body": "Een ontspannen treinreis langs vier meren en historische stadskernen.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "saksen-stoom-en-zandsteen",
+    "titel": "Saksen: stoom en zandsteen",
+    "land": "Duitsland",
+    "samenvatting": "Dresden, smalspoor en wandelpaden in Saksisch Zwitserland.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Dresden ontdekken",
+        "beschrijving": "We reizen naar Duitsland en nemen tijd voor een eerste verkenning.",
+        "vervoer": "intercity",
+        "verblijf": "hotel in Dresden"
+      },
+      {
+        "nummer": 2,
+        "titel": "Smalspoor naar de bergen",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "stoomtrein en te voet",
+        "verblijf": "pension in Kurort Oybin"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-04-24",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 825
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1065
+          }
+        ]
+      }
+    ],
+    "body": "Dresden, smalspoor en wandelpaden in Saksisch Zwitserland.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "transsylvanie-per-nachttrein",
+    "titel": "Transsylvanië per nachttrein",
+    "land": "Roemenië",
+    "samenvatting": "Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Nachttrein naar Brașov",
+        "beschrijving": "We reizen naar Roemenië en nemen tijd voor een eerste verkenning.",
+        "vervoer": "nachttrein",
+        "verblijf": "slaaprijtuig"
+      },
+      {
+        "nummer": 2,
+        "titel": "Brașov en de Tâmpa",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "te voet",
+        "verblijf": "gasthuis in Brașov"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-09-10",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1195
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1435
+          }
+        ]
+      }
+    ],
+    "body": "Van Boedapest naar middeleeuwse steden aan de voet van de Karpaten.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "baltische-stedenlijn",
+    "titel": "Baltische stedenlijn",
+    "land": "Estland, Letland en Litouwen",
+    "samenvatting": "Drie hoofdsteden verbonden met trein en lijnbus.",
+    "moeilijkheid": "makkelijk",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Vilnius oude stad",
+        "beschrijving": "We reizen naar Estland, Letland en Litouwen en nemen tijd voor een eerste verkenning.",
+        "vervoer": "trein",
+        "verblijf": "hotel in Vilnius"
+      },
+      {
+        "nummer": 2,
+        "titel": "Door naar Riga",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "trein en lijnbus",
+        "verblijf": "hotel in Riga"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-06-05",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1045
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1285
+          }
+        ]
+      }
+    ],
+    "body": "Drie hoofdsteden verbonden met trein en lijnbus.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "portugese-dourovallei",
+    "titel": "Portugese Dourovallei",
+    "land": "Portugal",
+    "samenvatting": "Van Porto langs de Douro naar wijndorpen en rivierterrassen.",
+    "moeilijkheid": "gemiddeld",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Porto en de Douro",
+        "beschrijving": "We reizen naar Portugal en nemen tijd voor een eerste verkenning.",
+        "vervoer": "nachttrein en intercity",
+        "verblijf": "hotel in Porto"
+      },
+      {
+        "nummer": 2,
+        "titel": "Spoorlijn naar Pinhão",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "regionale trein en te voet",
+        "verblijf": "quinta bij Pinhão"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-09-18",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1275
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1515
+          }
+        ]
+      }
+    ],
+    "body": "Van Porto langs de Douro naar wijndorpen en rivierterrassen.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  },
+  {
+    "slug": "poolse-bergen-en-hanzesteden",
+    "titel": "Poolse bergen en Hanzesteden",
+    "land": "Polen",
+    "samenvatting": "Krakau, het Tatragebergte en Gdańsk in één treinroute.",
+    "moeilijkheid": "uitdagend",
+    "dagen": [
+      {
+        "nummer": 1,
+        "titel": "Krakau kennismaking",
+        "beschrijving": "We reizen naar Polen en nemen tijd voor een eerste verkenning.",
+        "vervoer": "nachttrein",
+        "verblijf": "hotel in Krakau"
+      },
+      {
+        "nummer": 2,
+        "titel": "Wandeling bij Zakopane",
+        "beschrijving": "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken.",
+        "vervoer": "bus en te voet",
+        "verblijf": "berghotel bij Zakopane"
+      }
+    ],
+    "vertrekdata": [
+      {
+        "datum": "2027-08-07",
+        "prijsstaffels": [
+          {
+            "omschrijving": "per persoon, gedeelde tweepersoonskamer",
+            "prijs": 1245
+          },
+          {
+            "omschrijving": "per persoon, eenpersoonskamer",
+            "prijs": 1485
+          }
+        ]
+      }
+    ],
+    "body": "Krakau, het Tatragebergte en Gdańsk in één treinroute.\n\nDe route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie."
+  }
+]

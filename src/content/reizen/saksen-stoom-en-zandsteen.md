@@ -1,31 +1,31 @@
 ---
-titel: "Dolomieten per nachttrein"
-land: "Italië"
-samenvatting: "Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen."
+titel: "Saksen: stoom en zandsteen"
+land: "Duitsland"
+samenvatting: "Dresden, smalspoor en wandelpaden in Saksisch Zwitserland."
 moeilijkheid: gemiddeld
 dagen:
   - nummer: 1
-    titel: "Amsterdam naar Bolzano"
-    beschrijving: "We reizen naar Italië en nemen tijd voor een eerste verkenning."
-    vervoer: "nachttrein en regionale trein"
+    titel: "Dresden ontdekken"
+    beschrijving: "We reizen naar Duitsland en nemen tijd voor een eerste verkenning."
+    vervoer: "intercity"
     bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "familiehotel in Bolzano"
+    verblijf: "hotel in Dresden"
   - nummer: 2
-    titel: "Wandeling rond de Seiser Alm"
+    titel: "Smalspoor naar de bergen"
     beschrijving: "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken."
-    vervoer: "bus en te voet"
+    vervoer: "stoomtrein en te voet"
     bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "berghotel op de Seiser Alm"
+    verblijf: "pension in Kurort Oybin"
 vertrekdata:
-  - datum: 2027-05-14
+  - datum: 2027-04-24
     bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
     prijsstaffels:
       - omschrijving: "per persoon, gedeelde tweepersoonskamer"
-        prijs: 1295
+        prijs: 825
       - omschrijving: "per persoon, eenpersoonskamer"
-        prijs: 1535
+        prijs: 1065
 ---
 
-Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.
+Dresden, smalspoor en wandelpaden in Saksisch Zwitserland.
 
 De route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie.

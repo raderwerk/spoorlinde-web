@@ -1,31 +1,31 @@
 ---
-titel: "Dolomieten per nachttrein"
-land: "Italië"
-samenvatting: "Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen."
+titel: "Slovenië groen en gastvrij"
+land: "Slovenië"
+samenvatting: "Van Ljubljana naar het meer van Bohinj via kleinschalige verblijven."
 moeilijkheid: gemiddeld
 dagen:
   - nummer: 1
-    titel: "Amsterdam naar Bolzano"
-    beschrijving: "We reizen naar Italië en nemen tijd voor een eerste verkenning."
-    vervoer: "nachttrein en regionale trein"
+    titel: "Aankomst in Ljubljana"
+    beschrijving: "We reizen naar Slovenië en nemen tijd voor een eerste verkenning."
+    vervoer: "dagtrein"
     bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "familiehotel in Bolzano"
+    verblijf: "stadshotel in Ljubljana"
   - nummer: 2
-    titel: "Wandeling rond de Seiser Alm"
+    titel: "Bohinj en de Julische Alpen"
     beschrijving: "Na het ontbijt volgt de hoofdroute met ruimte om in eigen tempo rond te kijken."
     vervoer: "bus en te voet"
     bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
-    verblijf: "berghotel op de Seiser Alm"
+    verblijf: "pension bij Bohinj"
 vertrekdata:
-  - datum: 2027-05-14
+  - datum: 2027-05-22
     bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
     prijsstaffels:
       - omschrijving: "per persoon, gedeelde tweepersoonskamer"
-        prijs: 1295
+        prijs: 1095
       - omschrijving: "per persoon, eenpersoonskamer"
-        prijs: 1535
+        prijs: 1335
 ---
 
-Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.
+Van Ljubljana naar het meer van Bohinj via kleinschalige verblijven.
 
 De route combineert treintrajecten met lokale wandelingen. Reizigers ontvangen voor vertrek praktische route-informatie.

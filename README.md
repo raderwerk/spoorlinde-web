@@ -12,9 +12,9 @@ Spoorlinde is een **fictieve** klant in de Raderwerk-demo. Er bestaat geen echt 
 
 ## Stack en waarom
 
-**Astro**, statisch gebouwd en gehost op GitHub Pages.
+**Astro**, statisch gebouwd en gehost op GitHub Pages, met **Decap CMS** als redactionele interface.
 
-- De reizen zijn contentmodel-in-repo: Astro's content collections (`src/content/reizen`) geven elke reis een markdown-bestand met gevalideerde frontmatter (`src/content/config.ts`). Een redacteur voegt een reis toe zonder ontwikkelaar en zonder los CMS.
+- De reizen zijn contentmodel-in-repo: Astro's content collections (`src/content/reizen`) geven elke reis een markdown-bestand met gevalideerde frontmatter (`src/content/config.ts`). Een redacteur voegt via `/admin/` een reis toe zonder code te wijzigen. De CMS-beheerder moet voor de previewomgeving de GitHub OAuth-proxy instellen; lokaal start je daarnaast `npx decap-server`.
 - Geen betalingen, geen serverstatus nodig voor de contentpagina's zelf: een statische build past bij "geen betalingen, wél een aanvraagformulier".
 - Bouwt met één commando, draait met één commando, deployt naar GitHub Pages zonder extra infrastructuur.
 
@@ -28,8 +28,43 @@ Vereist: Node.js 22 of hoger.
 npm install
 npm run dev       # lokale server op http://localhost:4321
 npm run build     # typecheck + statische build naar dist/
+npm run test:content # controleert twaalf reizen plus een ongeldige reis
 npm run preview   # de build lokaal bekijken
 ```
+
+## Reisdetailpagina
+
+Iedere reis krijgt tijdens de statische build een detailpagina onder `/reizen/<slug>/`. De dagindeling gebruikt uitklapbare browser-elementen, de prijstabel benoemt bedragen per persoon en iedere route- en prijsclaim toont de bron uit het contentmodel. De lokale routekaart wordt pas na een klik geladen en maakt geen verbinding met externe kaart- of trackingdiensten. Bij elke reis hoort bovendien een downloadbaar pdf-reisschema dat uit dezelfde gevalideerde content wordt opgebouwd.
+
+Open voor lokaal redigeren een tweede terminal met `npx decap-server` en bezoek
+`http://localhost:4321/spoorlinde-web/admin/`. Kies **Reizen → Nieuwe reis**. Alle
+velden hebben hulptekst. Door de verplichte velden en minimale lijstlengtes kan een
+reis zonder vertrekdatum of zonder prijsstaffel niet worden gepubliceerd.
+
+## Contentmodel en seed
+
+| Veld | Type | Verplicht | Voorbeeld |
+| --- | --- | --- | --- |
+| reis.titel | tekst | ja | Dolomieten per nachttrein |
+| reis.land | tekst | ja | Italië |
+| reis.samenvatting | tekst | ja | Treinreis naar Zuid-Tirol… |
+| reis.moeilijkheid | keuze | ja | gemiddeld |
+| reis.dagen | lijst van dagen | ja, minimaal 1 | dag 1 |
+| dag.nummer | positief geheel getal | ja | 1 |
+| dag.titel | tekst | ja | Aankomst in Bolzano |
+| dag.beschrijving | tekst | ja | We verkennen de stad… |
+| dag.vervoer | tekst | ja | nachttrein en regionale trein |
+| dag.verblijf | tekst | ja | familiehotel in Bolzano |
+| reis.vertrekdata | lijst van vertrekdata | ja, minimaal 1 | 2027-05-14 |
+| vertrek.datum | datum | ja | 2027-05-14 |
+| vertrek.prijsstaffels | lijst van prijzen | ja, minimaal 1 | gedeelde kamer, € 1295 |
+| prijs.omschrijving | tekst | ja | per persoon, gedeelde kamer |
+| prijs.prijs | positief geheel getal (euro) | ja | 1295 |
+| reisverhaal | Markdown | ja | De route combineert… |
+
+De twaalf bronbestanden staan in `src/content/reizen`. Dezelfde records staan als
+machineleesbaar seedbestand in `src/data/reizen.seed.json`, zodat een nieuwe
+omgeving reproduceerbaar gevuld en gecontroleerd kan worden.
 
 ## Bijdragen via PR
 
