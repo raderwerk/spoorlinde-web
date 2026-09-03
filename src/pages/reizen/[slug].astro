@@ -1,0 +1,40 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const reizen = await getCollection("reizen");
+  return reizen.map((reis) => ({
+    params: { slug: reis.slug },
+    props: { reis },
+  }));
+}
+
+interface Props {
+  reis: CollectionEntry<"reizen">;
+}
+
+const { reis } = Astro.props;
+const { Content } = await reis.render();
+const base = import.meta.env.BASE_URL;
+---
+
+<Basis titel={reis.data.titel} huidige="reizen">
+  <article class="panel">
+    <p class="meta">
+      <a href={base}>Alle reizen</a>
+    </p>
+    <h1>{reis.data.titel}</h1>
+    <p class="lede">{reis.data.samenvatting}</p>
+    <p class="meta">
+      {reis.data.land} · {reis.data.duurInDagen} dagen · {reis.data.maanden.join(", ")} · vanaf €{
+        reis.data.prijsVanaf
+      }
+    </p>
+    <Content />
+    <p class="actions">
+      <a class="button" href={`${base}aanvraag?reis=${reis.slug}`}>Vraag deze reis aan</a>
+    </p>
+    <p class="hint">Geen betaling. In maximaal drie stappen, met testdomein-e-mail.</p>
+  </article>
+</Basis>

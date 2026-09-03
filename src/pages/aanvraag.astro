@@ -1,0 +1,123 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { getCollection } from "astro:content";
+
+const reizen = await getCollection("reizen");
+const reisOpties = reizen.map((reis) => ({
+  slug: reis.slug,
+  titel: reis.data.titel,
+}));
+const preselectedSlug = Astro.url.searchParams.get("reis") ?? "";
+const bootJson = JSON.stringify({
+  reizen: reisOpties,
+  preselectedSlug,
+  baseUrl: import.meta.env.BASE_URL,
+});
+---
+
+<Basis titel="Aanvraag" huidige="aanvraag">
+  <h1>Reis aanvragen</h1>
+  <p class="lede">
+    Drie stappen, geen betaalgegevens. Gebruik een testdomein zoals
+    <code>reiziger@example.com</code>. Er gaat geen mail naar een echt adres.
+  </p>
+
+  <p id="form-status" role="status" aria-live="polite"></p>
+
+  <section id="bevestiging" class="confirm panel" hidden tabindex="-1">
+    <h2>Aanvraag ontvangen</h2>
+    <p id="bevestiging-tekst"></p>
+    <p>Je referentienummer:</p>
+    <p class="confirm-ref" id="bevestiging-referentie"></p>
+    <p class="hint">Er is geen betaling gevraagd of uitgevoerd.</p>
+    <p><a href={import.meta.env.BASE_URL}>Terug naar de reizen</a></p>
+  </section>
+
+  <div id="aanvraag-wizard">
+    <ol class="step-list" aria-label="Voortgang">
+      <li data-step-indicator="1" aria-current="step">1. Reis</li>
+      <li data-step-indicator="2">2. Gegevens</li>
+      <li data-step-indicator="3">3. Controle</li>
+    </ol>
+    <h2 id="stap-heading">Stap 1 van 3: Kies je reis</h2>
+
+    <form id="aanvraag-form" class="panel" novalidate>
+      <fieldset data-step="1">
+        <legend class="visually-hidden">Stap 1 van 3: kies je reis</legend>
+        <div class="field">
+          <label for="reisSlug">Reis</label>
+          <select id="reisSlug" name="reisSlug" required>
+            <option value="">Kies een reis</option>
+            {
+              reisOpties.map((reis) => (
+                <option value={reis.slug} selected={reis.slug === preselectedSlug}>
+                  {reis.titel}
+                </option>
+              ))
+            }
+          </select>
+          <p class="field-error" data-error-for="reisSlug"></p>
+        </div>
+        <div class="actions">
+          <button type="button" data-action="next">Volgende</button>
+        </div>
+      </fieldset>
+
+      <fieldset data-step="2" hidden>
+        <legend class="visually-hidden">Stap 2 van 3: jouw gegevens</legend>
+        <div class="field">
+          <label for="naam">Naam</label>
+          <input id="naam" name="naam" type="text" autocomplete="name" required minlength="2" />
+          <p class="field-error" data-error-for="naam"></p>
+        </div>
+        <div class="field">
+          <label for="email">E-mail (testdomein)</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            inputmode="email"
+            placeholder="reiziger@example.com"
+            required
+          />
+          <p class="hint">Toegestaan: @example.com, @example.org, @example.net, @spoorlinde.test</p>
+          <p class="field-error" data-error-for="email"></p>
+        </div>
+        <div class="field">
+          <label for="opmerking">Opmerking (niet verplicht)</label>
+          <textarea id="opmerking" name="opmerking" maxlength="1000"></textarea>
+        </div>
+        <div class="actions">
+          <button type="button" class="button-secondary" data-action="prev">Vorige</button>
+          <button type="button" data-action="next">Volgende</button>
+        </div>
+      </fieldset>
+
+      <fieldset data-step="3" hidden>
+        <legend class="visually-hidden">Stap 3 van 3: controleer en verstuur</legend>
+        <p>Controleer je aanvraag. We vragen geen betaalgegevens.</p>
+        <dl class="summary" id="controle-samenvatting"></dl>
+        <div class="actions">
+          <button type="button" class="button-secondary" data-action="prev">Vorige</button>
+          <button type="submit" data-action="submit">Verstuur aanvraag</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</Basis>
+
+<script id="aanvraag-boot" type="application/json" is:inline set:html={bootJson}></script>
+<script>
+  import { bindAanvraagForm } from "../lib/aanvraag/browser-form";
+
+  const bootNode = document.getElementById("aanvraag-boot");
+  if (bootNode?.textContent) {
+    const boot = JSON.parse(bootNode.textContent) as {
+      reizen: { slug: string; titel: string }[];
+      preselectedSlug: string;
+      baseUrl: string;
+    };
+    bindAanvraagForm(document, boot);
+  }
+</script>
