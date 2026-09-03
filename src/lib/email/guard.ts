@@ -20,13 +20,15 @@ export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
 }
 
+const EMAIL_PATTERN = /^([a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*)@([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+)$/i;
+
+export function isValidEmailAddress(email: string): boolean {
+  return EMAIL_PATTERN.test(normalizeEmail(email));
+}
+
 export function domainOf(email: string): string | null {
   const normalized = normalizeEmail(email);
-  const at = normalized.lastIndexOf("@");
-  if (at <= 0 || at === normalized.length - 1) {
-    return null;
-  }
-  return normalized.slice(at + 1);
+  return EMAIL_PATTERN.exec(normalized)?.[2] ?? null;
 }
 
 export function isAllowedTestEmail(email: string): boolean {

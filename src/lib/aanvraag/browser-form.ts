@@ -1,6 +1,7 @@
 import { nextStep, prevStep, TOTAL_STEPS, type DraftStore, type DraftValues, type WizardStep } from "./draft";
 import { describeSubmitResult, submitAanvraag } from "./submit";
 import { createBrowserAanvraagRuntime, retryQueuedAanvragen } from "./runtime";
+import { isValidEmailAddress } from "../email/guard";
 
 export type ReisOption = {
   slug: string;
@@ -240,7 +241,7 @@ function validateCurrentStep(
     } else {
       setFieldError(form, "naam", "");
     }
-    if (!email.includes("@")) {
+    if (!isValidEmailAddress(email)) {
       setFieldError(form, "email", "Vul een geldig e-mailadres in.");
       ok = false;
     } else {
@@ -260,6 +261,18 @@ function setFieldError(form: HTMLFormElement, name: string, message: string): vo
   const error = form.querySelector(`[data-error-for="${name}"]`);
   if (field instanceof HTMLElement) {
     field.setAttribute("aria-invalid", message ? "true" : "false");
+    const errorId = `${name}-error`;
+    const describedBy = new Set((field.getAttribute("aria-describedby") ?? "").split(/\s+/).filter(Boolean));
+    if (message) {
+      describedBy.add(errorId);
+    } else {
+      describedBy.delete(errorId);
+    }
+    if (describedBy.size > 0) {
+      field.setAttribute("aria-describedby", [...describedBy].join(" "));
+    } else {
+      field.removeAttribute("aria-describedby");
+    }
   }
   if (error) {
     error.textContent = message;

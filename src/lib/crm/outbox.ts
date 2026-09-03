@@ -26,13 +26,8 @@ export class Outbox {
 
   enqueue(aanvraag: AanvraagPayload): OutboxItem {
     const state = this.load();
-    const existing = state.items.find(
-      (item) => item.status === "pending" && item.aanvraag.email === aanvraag.email,
-    );
+    const existing = state.items.find((item) => item.id === aanvraag.submissionId);
     if (existing) {
-      existing.aanvraag = aanvraag;
-      existing.id = aanvraag.submissionId;
-      this.save(state);
       return existing;
     }
 

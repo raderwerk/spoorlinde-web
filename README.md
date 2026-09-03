@@ -35,7 +35,7 @@ Er is geen mailer. `sendTransactionalEmail` gooit altijd. Het formulier acceptee
 - `example.com`, `example.org`, `example.net` (RFC 2606)
 - `spoorlinde.test` (`.test` is gereserveerd)
 
-Een adres als `iemand@gmail.com` wordt geweigerd. Dit is afgedekt in `src/lib/email/guard.ts` en in `tests/aanvraag-crm.test.ts`.
+Een adres buiten de gereserveerde testdomeinen, zoals `iemand@voorbeeld.invalid`, wordt geweigerd. Dit is afgedekt in `src/lib/email/guard.ts` en in `tests/aanvraag-crm.test.ts`.
 
 ## Lokaal draaien
 

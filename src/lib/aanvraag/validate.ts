@@ -1,4 +1,4 @@
-import { isAllowedTestEmail, normalizeEmail } from "../email/guard";
+import { isAllowedTestEmail, isValidEmailAddress, normalizeEmail } from "../email/guard";
 import { USER_MESSAGES } from "./messages";
 
 export type AanvraagInput = {
@@ -55,7 +55,7 @@ export function validateAanvraag(input: AanvraagInput): ValidationResult {
     errors.push({ field: "naam", message: "Vul je naam in (minimaal twee letters)." });
   }
 
-  if (!email.includes("@") || !email.split("@")[0]) {
+  if (!isValidEmailAddress(email)) {
     errors.push({ field: "email", message: "Vul een geldig e-mailadres in." });
   } else if (!isAllowedTestEmail(email)) {
     errors.push({ field: "email", message: USER_MESSAGES.realEmailForbidden });

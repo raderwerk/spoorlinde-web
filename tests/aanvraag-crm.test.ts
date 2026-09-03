@@ -15,8 +15,10 @@ import { DUPLICATE_WINDOW_MS } from "../src/lib/crm/types";
 import {
   REAL_MAIL_FORBIDDEN_MESSAGE,
   isAllowedTestEmail,
+  isValidEmailAddress,
   sendTransactionalEmail,
 } from "../src/lib/email/guard";
+import { serializeForInlineScript } from "../src/lib/aanvraag/serialize";
 
 const REIS = {
   reisSlug: "dolomieten-per-nachttrein",
@@ -135,16 +137,43 @@ describe("WV-194 aanvraag → CRM", () => {
     expect(crm.snapshot().contacts).toHaveLength(1);
     expect(crm.snapshot().contacts[0]?.reisSlug).toBe("dolomieten-per-nachttrein");
   });
+
+  it("keeps separate queued aanvragen and retry counters for the same address", async () => {
+    const { crm, outbox, deps } = createHarness();
+    crm.reachable = false;
+
+    await submitAanvraag(aanvraag("reiziger@example.com", {
+      submissionId: "sub-A",
+      reisSlug: "reis-A",
+      reisTitel: "Reis A",
+    }), deps);
+    await submitAanvraag(aanvraag("reiziger@example.com", {
+      submissionId: "sub-B",
+      reisSlug: "reis-B",
+      reisTitel: "Reis B",
+    }), deps);
+
+    expect(outbox.listPending()).toMatchObject([
+      { id: "sub-A", aanvraag: { reisSlug: "reis-A" }, attempts: 3 },
+      { id: "sub-B", aanvraag: { reisSlug: "reis-B" }, attempts: 3 },
+    ]);
+
+    crm.reachable = true;
+    expect(await flushOutbox(deps)).toEqual({ delivered: 2, failed: 0 });
+    expect(outbox.listPending()).toHaveLength(0);
+    expect(crm.snapshot().contacts).toHaveLength(1);
+    expect(crm.snapshot().contacts[0]?.notes[0]?.reisSlug).toBe("reis-B");
+  });
 });
 
 describe("test-only e-mail guard", () => {
   it("accepts reserved test domains and rejects a real inbox", () => {
     expect(isAllowedTestEmail("reiziger@example.com")).toBe(true);
     expect(isAllowedTestEmail("demo@spoorlinde.test")).toBe(true);
-    expect(isAllowedTestEmail("iemand@gmail.com")).toBe(false);
-    expect(isAllowedTestEmail("klant@spoorlinde.nl")).toBe(false);
+    expect(isAllowedTestEmail("iemand@voorbeeld.invalid")).toBe(false);
+    expect(isAllowedTestEmail("klant@spoorlinde.invalid")).toBe(false);
 
-    const rejected = validateAanvraag(aanvraag("klant@gmail.com"));
+    const rejected = validateAanvraag(aanvraag("klant@voorbeeld.invalid"));
     expect(rejected.ok).toBe(false);
     if (rejected.ok) {
       throw new Error("expected rejection");
@@ -153,10 +182,37 @@ describe("test-only e-mail guard", () => {
     expect(REAL_MAIL_FORBIDDEN_MESSAGE.toLowerCase()).toMatch(/geen e-mail|echt adres/);
   });
 
+  it.each([
+    "a@b@example.com",
+    "a b c@example.com",
+    "<script>@example.com",
+    "a@@example.com",
+  ])("rejects malformed address %s before checking its domain", (email) => {
+    expect(isValidEmailAddress(email)).toBe(false);
+    const rejected = validateAanvraag(aanvraag(email));
+    expect(rejected.ok).toBe(false);
+    if (!rejected.ok) {
+      expect(rejected.errors[0]).toEqual({
+        field: "email",
+        message: "Vul een geldig e-mailadres in.",
+      });
+    }
+  });
+
   it("refuses to send transactional mail to any address", () => {
     expect(() => sendTransactionalEmail("reiziger@example.com", "x", "y")).toThrow(
       /no mail is sent/i,
     );
+  });
+});
+
+describe("aanvraag page bootstrap", () => {
+  it("cannot be escaped by a trip title containing a closing script tag", () => {
+    const attack = "</script><img src=x onerror=alert(1)>";
+    const serialized = serializeForInlineScript({ titel: attack });
+
+    expect(serialized).not.toContain("<");
+    expect(JSON.parse(serialized)).toEqual({ titel: attack });
   });
 });
 

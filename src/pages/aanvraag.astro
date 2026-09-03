@@ -2,6 +2,7 @@
 import Basis from "../layouts/Basis.astro";
 import { getCollection } from "astro:content";
 import { siteBase } from "../lib/site-base";
+import { serializeForInlineScript } from "../lib/aanvraag/serialize";
 
 const reizen = await getCollection("reizen");
 const reisOpties = reizen.map((reis) => ({
@@ -9,7 +10,7 @@ const reisOpties = reizen.map((reis) => ({
   titel: reis.data.titel,
 }));
 const preselectedSlug = Astro.url.searchParams.get("reis") ?? "";
-const bootJson = JSON.stringify({
+const bootJson = serializeForInlineScript({
   reizen: reisOpties,
   preselectedSlug,
   baseUrl: siteBase(),
@@ -57,7 +58,7 @@ const bootJson = JSON.stringify({
               ))
             }
           </select>
-          <p class="field-error" data-error-for="reisSlug"></p>
+          <p id="reisSlug-error" class="field-error" data-error-for="reisSlug"></p>
         </div>
         <div class="actions">
           <button type="button" data-action="next">Volgende</button>
@@ -69,7 +70,7 @@ const bootJson = JSON.stringify({
         <div class="field">
           <label for="naam">Naam</label>
           <input id="naam" name="naam" type="text" autocomplete="name" required minlength="2" />
-          <p class="field-error" data-error-for="naam"></p>
+          <p id="naam-error" class="field-error" data-error-for="naam"></p>
         </div>
         <div class="field">
           <label for="email">E-mail (testdomein)</label>
@@ -80,10 +81,11 @@ const bootJson = JSON.stringify({
             autocomplete="email"
             inputmode="email"
             placeholder="reiziger@example.com"
+            aria-describedby="email-hint"
             required
           />
-          <p class="hint">Toegestaan: @example.com, @example.org, @example.net, @spoorlinde.test</p>
-          <p class="field-error" data-error-for="email"></p>
+          <p id="email-hint" class="hint">Toegestaan: @example.com, @example.org, @example.net, @spoorlinde.test</p>
+          <p id="email-error" class="field-error" data-error-for="email"></p>
         </div>
         <div class="field">
           <label for="opmerking">Opmerking (niet verplicht)</label>
