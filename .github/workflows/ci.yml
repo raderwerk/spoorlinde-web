@@ -19,6 +19,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Test journey filters
+        run: npm run test:filters
+
       - name: Validate journey content
         run: npm run test:content
 
