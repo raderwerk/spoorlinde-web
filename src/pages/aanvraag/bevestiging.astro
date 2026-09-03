@@ -1,0 +1,33 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { siteBase, sitePath } from "../../lib/site-base";
+---
+
+<Basis titel="Bevestiging" huidige="aanvraag">
+  <section class="confirm panel">
+    <h1>Aanvraag ontvangen</h1>
+    <p id="bevestiging-tekst">
+      Als je zojuist een aanvraag hebt verstuurd, staat je referentienummer hieronder.
+    </p>
+    <p>Je referentienummer:</p>
+    <p class="confirm-ref" id="bevestiging-referentie">—</p>
+    <p class="hint">Er is geen betaling gevraagd of uitgevoerd. Er is geen e-mail verstuurd.</p>
+    <p>
+      <a href={sitePath("aanvraag")}>Nieuwe aanvraag</a> · <a href={siteBase()}>Terug naar de reizen</a>
+    </p>
+  </section>
+</Basis>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const reference = params.get("ref");
+  const refNode = document.getElementById("bevestiging-referentie");
+  const textNode = document.getElementById("bevestiging-tekst");
+  if (reference && refNode && textNode) {
+    refNode.textContent = reference;
+    textNode.textContent = "Bewaar dit nummer. Het hoort bij de contactpersoon in het CRM.";
+  } else if (textNode) {
+    textNode.textContent =
+      "Geen referentie gevonden. Als het CRM onbereikbaar was, is je aanvraag bewaard en geen succesmelding.";
+  }
+</script>

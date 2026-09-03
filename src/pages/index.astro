@@ -1,22 +1,32 @@
 ---
 import Basis from "../layouts/Basis.astro";
 import { getCollection } from "astro:content";
+import { sitePath } from "../lib/site-base";
 
 const reizen = await getCollection("reizen");
 ---
 
-<Basis titel="Reizen">
+<Basis titel="Reizen" huidige="reizen">
   <h1>Langzame treinreizen door Europa</h1>
-  <p>
-    De reis is belangrijker dan de bestemming. Hieronder de reizen die al in het
-    contentmodel staan.
+  <p class="lede">
+    De reis is belangrijker dan de bestemming. Kies een reis en vraag hem aan; de
+    aanvraag landt in het CRM van deze demo, zonder betaling en zonder echte e-mail.
   </p>
-  <ul>
+  <ul class="trip-list">
     {
       reizen.map((reis) => (
-        <li>
-          <strong>{reis.data.titel}</strong> — {reis.data.land}, {reis.data.duurInDagen} dagen,
-          vanaf €{reis.data.prijsVanaf} · {reis.data.moeilijkheid}
+        <li class="trip-card">
+          <a href={sitePath(`reizen/${reis.slug}`)}>{reis.data.titel}</a>
+          <p>
+            {reis.data.land} · {reis.data.duurInDagen} dagen · vanaf €{reis.data.prijsVanaf} ·{" "}
+            {reis.data.moeilijkheid}
+          </p>
+          <p>{reis.data.samenvatting}</p>
+          <p>
+            <a class="button" href={sitePath(`aanvraag?reis=${reis.slug}`)}>
+              Vraag deze reis aan
+            </a>
+          </p>
         </li>
       ))
     }

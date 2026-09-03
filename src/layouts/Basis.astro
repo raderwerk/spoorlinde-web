@@ -1,8 +1,14 @@
 ---
+import "../styles/global.css";
+import { siteBase, sitePath } from "../lib/site-base";
+
 interface Props {
   titel: string;
+  huidige?: "reizen" | "aanvraag";
 }
-const { titel } = Astro.props;
+
+const { titel, huidige } = Astro.props;
+const base = siteBase();
 ---
 
 <!doctype html>
@@ -13,14 +19,22 @@ const { titel } = Astro.props;
     <title>{titel} — Spoorlinde</title>
   </head>
   <body>
-    <header>
-      <p><strong>Spoorlinde</strong> — langzame treinreizen door Europa</p>
+    <a class="skip-link" href="#inhoud">Ga naar inhoud</a>
+    <header class="site-header">
+      <a class="site-brand" href={base}>Spoorlinde</a>
+      <nav class="site-nav" aria-label="Hoofd">
+        <a href={base} aria-current={huidige === "reizen" ? "page" : undefined}>Reizen</a>
+        <a href={sitePath("aanvraag")} aria-current={huidige === "aanvraag" ? "page" : undefined}
+          >Aanvraag</a
+        >
+      </nav>
     </header>
-    <main>
+    <main class="site-main" id="inhoud">
       <slot />
     </main>
-    <footer>
+    <footer class="site-footer">
       <p>Demonstratiebedrijf van Raderwerk. Dit bedrijf bestaat niet.</p>
+      <p>Er gaat geen e-mail naar een echt adres. Alleen testdomeinen zoals @example.com zijn toegestaan.</p>
     </footer>
   </body>
 </html>
