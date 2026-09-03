@@ -110,3 +110,17 @@ Deze repo hoort bij het Raderwerk-werkvloerproces (zie `linear-workspace-spec.md
 - CI-workflow: `.github/workflows/ci.yml`, job `ci` (test + typecheck + build).
 - Preview/publicatie: `.github/workflows/pages.yml`, publiceert naar GitHub Pages op elke push naar `main`.
 - Site-URL: https://raderwerk.github.io/spoorlinde-web/
+
+## Afbakening reisdetail
+
+De hero-afbeelding boven de vouw wordt bewust direct geladen in plaats van lazy-loaded:
+dit lokale, kleine SVG-bestand is de LCP-kandidaat en uitgesteld laden zou de LCP
+onnodig verslechteren. De routekaart onder de vouw blijft wel lazy-loaded en wordt pas
+na expliciete interactie opgehaald.
+
+Het downloadbare reisschema is bewust afgebakend tot de praktische reisinformatie die
+een reiziger onderweg nodig heeft: de volledige dagindeling, vervoer, verblijf,
+bronnen en prijzen. Het redactionele reisverhaal, de interactieve kaart en de
+call-to-action van de webpagina staan daarom niet in de pdf. De samenvatting wordt op
+de detailpagina één keer als intro getoond en is niet nogmaals als eerste alinea in het
+reisverhaal opgenomen.

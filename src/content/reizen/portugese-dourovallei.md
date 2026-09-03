@@ -66,8 +66,6 @@ maanden:
 prijsVanaf: 1275
 ---
 
-Van Porto langs de Douro naar wijndorpen en rivierterrassen.
-
 Tijdens deze reis volgen we 8 dagen lang een afwisselende route door Portugal. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 
 Het dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd.

@@ -54,8 +54,6 @@ maanden:
 prijsVanaf: 1325
 ---
 
-Een ontspannen treinreis langs vier meren en historische stadskernen.
-
 Tijdens deze reis volgen we 6 dagen lang een afwisselende route door Zwitserland. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 
 Het dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd.

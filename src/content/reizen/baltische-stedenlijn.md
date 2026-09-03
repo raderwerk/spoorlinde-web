@@ -54,8 +54,6 @@ maanden:
 prijsVanaf: 1045
 ---
 
-Drie hoofdsteden verbonden met trein en lijnbus.
-
 Tijdens deze reis volgen we 6 dagen lang een afwisselende route door Estland, Letland en Litouwen. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 
 Het dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd.

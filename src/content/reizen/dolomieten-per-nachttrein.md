@@ -54,8 +54,6 @@ maanden:
 prijsVanaf: 1295
 ---
 
-Treinreis naar Zuid-Tirol met rustige wandelingen tussen bergdorpen.
-
 Tijdens deze reis volgen we 6 dagen lang een afwisselende route door Italië. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 
 Het dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd.

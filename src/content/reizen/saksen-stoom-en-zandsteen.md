@@ -54,8 +54,6 @@ maanden:
 prijsVanaf: 825
 ---
 
-Dresden, smalspoor en wandelpaden in Saksisch Zwitserland.
-
 Tijdens deze reis volgen we 6 dagen lang een afwisselende route door Duitsland. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 
 Het dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd.

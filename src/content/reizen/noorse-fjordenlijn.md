@@ -60,8 +60,6 @@ maanden:
 prijsVanaf: 1495
 ---
 
-Een spoorroute van Oslo naar Bergen met uitzicht op het fjordenlandschap.
-
 Tijdens deze reis volgen we 7 dagen lang een afwisselende route door Noorwegen. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 
 Het dagprogramma benoemt per etappe het vervoer en het verblijf. De genoemde prijs is een vanafprijs voor de getoonde vertrekdatum; beschikbaarheid wordt bij een aanvraag gecontroleerd.
