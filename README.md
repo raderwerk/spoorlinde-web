@@ -48,10 +48,11 @@ Vereist: Node.js 22 of hoger.
 ```bash
 npm install
 npm run dev       # lokale server op http://localhost:4321
-npm test          # CRM-scenario's: nieuw contact, duplicaat, storing
+npm test          # alle CRM-, content- en reisdetailtests
 npm run test:filters # filters, sortering en dichtstbijzijnde alternatieven
 npm run build     # typecheck + statische build naar dist/
 npm run test:content # controleert twaalf reizen plus een ongeldige reis
+npm run test:detail # bouwt en controleert reisdetails, pdf en foutpad
 npm run preview   # de build lokaal bekijken
 ```
 
@@ -78,9 +79,11 @@ reis zonder vertrekdatum of zonder prijsstaffel niet worden gepubliceerd.
 | dag.titel | tekst | ja | Aankomst in Bolzano |
 | dag.beschrijving | tekst | ja | We verkennen de stad… |
 | dag.vervoer | tekst | ja | nachttrein en regionale trein |
+| dag.bron | tekst | ja | Klantdossier Spoorlinde — fictieve voorbeeldroute |
 | dag.verblijf | tekst | ja | familiehotel in Bolzano |
 | reis.vertrekdata | lijst van vertrekdata | ja, minimaal 1 | 2027-05-14 |
 | vertrek.datum | datum | ja | 2027-05-14 |
+| vertrek.bron | tekst | ja | Klantdossier Spoorlinde — fictieve prijsopgave 2027 |
 | vertrek.prijsstaffels | lijst van prijzen | ja, minimaal 1 | gedeelde kamer, € 1295 |
 | prijs.omschrijving | tekst | ja | per persoon, gedeelde kamer |
 | prijs.prijs | positief geheel getal (euro) | ja | 1295 |
@@ -107,3 +110,17 @@ Deze repo hoort bij het Raderwerk-werkvloerproces (zie `linear-workspace-spec.md
 - CI-workflow: `.github/workflows/ci.yml`, job `ci` (test + typecheck + build).
 - Preview/publicatie: `.github/workflows/pages.yml`, publiceert naar GitHub Pages op elke push naar `main`.
 - Site-URL: https://raderwerk.github.io/spoorlinde-web/
+
+## Afbakening reisdetail
+
+De hero-afbeelding boven de vouw wordt bewust direct geladen in plaats van lazy-loaded:
+dit lokale, kleine SVG-bestand is de LCP-kandidaat en uitgesteld laden zou de LCP
+onnodig verslechteren. De routekaart onder de vouw blijft wel lazy-loaded en wordt pas
+na expliciete interactie opgehaald.
+
+Het downloadbare reisschema is bewust afgebakend tot de praktische reisinformatie die
+een reiziger onderweg nodig heeft: de volledige dagindeling, vervoer, verblijf,
+bronnen en prijzen. Het redactionele reisverhaal, de interactieve kaart en de
+call-to-action van de webpagina staan daarom niet in de pdf. De samenvatting wordt op
+de detailpagina één keer als intro getoond en is niet nogmaals als eerste alinea in het
+reisverhaal opgenomen.

@@ -6,12 +6,14 @@ const dag = z.object({
   nummer: z.number().int().positive(),
   titel: z.string().min(1),
   beschrijving: z.string().min(1),
+  bron: z.string().min(1),
   vervoer: z.string().min(1),
   verblijf: z.string().min(1),
 });
 
 const vertrek = z.object({
   datum: z.coerce.date(),
+  bron: z.string().min(1),
   prijsstaffels: z.array(z.object({
     omschrijving: z.string().min(1),
     prijs: z.number().positive(),

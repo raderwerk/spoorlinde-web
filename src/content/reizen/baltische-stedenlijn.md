@@ -7,35 +7,42 @@ dagen:
 - nummer: 1
   titel: Aankomst in Vilnius
   beschrijving: Na aankomst wandelen we langs de barokke kerken en binnenplaatsen van de oude stad.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: trein en te voet
   verblijf: hotel in Vilnius
 - nummer: 2
   titel: Vilnius in lagen
   beschrijving: Een lokale gids verbindt het middeleeuwse centrum met de republiek Užupis en de markt bij het station.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: te voet
   verblijf: hotel in Vilnius
 - nummer: 3
   titel: Via Kaunas naar Riga
   beschrijving: De ochtendtrein rijdt naar Kaunas; daarna brengt de lijnbus ons over de grens naar Riga.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: trein en lijnbus
   verblijf: hotel in Riga
 - nummer: 4
   titel: Art nouveau in Riga
   beschrijving: We bekijken de jugendstilstraten, de centrale markt en de houten huizen aan de Daugava.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: tram en te voet
   verblijf: hotel in Riga
 - nummer: 5
   titel: Langs de kust naar Tallinn
   beschrijving: Een lijnbus volgt de Baltische kust noordwaarts, met een pauze in badplaats Pärnu.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: lijnbus
   verblijf: hotel in Tallinn
 - nummer: 6
   titel: Tallinn en Kadriorg
   beschrijving: De ommuurde bovenstad en het groene Kadriorgpark vullen een rustige slotdag.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: tram en te voet
   verblijf: hotel in Tallinn
 vertrekdata:
-- datum: 2027-06-05
+- bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
+  datum: 2027-06-05
   prijsstaffels:
   - omschrijving: 'Baltische stedenlijn: plek in een gedeelde tweepersoonskamer'
     prijs: 1045
@@ -46,8 +53,6 @@ maanden:
 - 6
 prijsVanaf: 1045
 ---
-
-Drie hoofdsteden verbonden met trein en lijnbus.
 
 Tijdens deze reis volgen we 6 dagen lang een afwisselende route door Estland, Letland en Litouwen. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 

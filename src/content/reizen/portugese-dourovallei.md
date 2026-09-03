@@ -7,45 +7,54 @@ dagen:
 - nummer: 1
   titel: Trein naar Parijs
   beschrijving: De reis begint met dagtreinen naar Parijs en tijd voor een diner nabij het station.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: hogesnelheidstrein
   verblijf: hotel in Parijs
 - nummer: 2
   titel: Via Spanje naar Porto
   beschrijving: We steken per trein het Iberisch schiereiland over en bereiken Porto in de avond.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: trein
   verblijf: hotel in Porto
 - nummer: 3
   titel: Porto aan de Douro
   beschrijving: Vanaf São Bento dalen we langs betegelde gevels af naar de kades van Ribeira.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: metro en te voet
   verblijf: hotel in Porto
 - nummer: 4
   titel: Dourospoor naar Pinhão
   beschrijving: De regionale trein volgt de rivier langs terrassen en kleine stations tot Pinhão.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: regionale trein
   verblijf: quinta bij Pinhão
 - nummer: 5
   titel: Wijngaardpaden
   beschrijving: Een rustige rondwandeling loopt tussen stenen muren, olijfbomen en uitzichtpunten boven de Douro.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: te voet
   verblijf: quinta bij Pinhão
 - nummer: 6
   titel: Rivierdorpen
   beschrijving: Per lokale boot en trein bezoeken we een tweede dorp aan de bovenloop van de rivier.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: boot en trein
   verblijf: hotel in Peso da Régua
 - nummer: 7
   titel: Terug naar Porto
   beschrijving: We reizen stroomafwaarts en houden een vrije middag voor de markthal en tuinen.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: regionale trein
   verblijf: hotel in Porto
 - nummer: 8
   titel: Terugreis
   beschrijving: Dagtreinen brengen ons via Vigo en Parijs terug naar Nederland.
+  bron: "Klantdossier Spoorlinde — fictieve voorbeeldroute"
   vervoer: trein
   verblijf: geen overnachting
 vertrekdata:
-- datum: 2027-09-18
+- bron: "Klantdossier Spoorlinde — fictieve prijsopgave 2027"
+  datum: 2027-09-18
   prijsstaffels:
   - omschrijving: 'Portugese Dourovallei: plek in een gedeelde tweepersoonskamer'
     prijs: 1275
@@ -56,8 +65,6 @@ maanden:
 - 9
 prijsVanaf: 1275
 ---
-
-Van Porto langs de Douro naar wijndorpen en rivierterrassen.
 
 Tijdens deze reis volgen we 8 dagen lang een afwisselende route door Portugal. Treinen vormen de ruggengraat; wandelingen en lokaal vervoer brengen ons dichter bij de plaatsen onderweg.
 

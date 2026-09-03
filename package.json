@@ -8,21 +8,24 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "lint": "astro check",
-    "test": "vitest run",
+    "test": "vitest run && npm run test:content && npm run test:detail",
     "test:watch": "vitest",
     "test:filters": "node --test tests/filter-reizen.test.mjs",
-    "test:content": "node scripts/validate-content.mjs && node tests/content-error-path.mjs"
+    "test:content": "node scripts/validate-content.mjs && node tests/content-error-path.mjs",
+    "test:detail": "node tests/reisdetail.mjs"
   },
   "engines": {
     "node": ">=22"
   },
   "dependencies": {
-    "astro": "^4.16.0"
+    "astro": "^4.16.0",
+    "pdfkit": "^0.16.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "typescript": "^5.6.3",
     "vitest": "^4.1.11",
-    "yaml": "^2.9.0"
+    "yaml": "^2.9.0",
+    "@types/pdfkit": "^0.13.9"
   }
 }

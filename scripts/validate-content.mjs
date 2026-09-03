@@ -9,8 +9,8 @@ const required = ["titel", "land", "samenvatting", "duurInDagen", "maanden", "pr
 export function validate(reis) {
   for (const field of required) assert.ok(reis[field]?.length ?? reis[field], `Vul ‘${field}’ in voordat je publiceert`);
   assert.equal(reis.dagen.length, reis.duurInDagen, "Duur in dagen moet gelijk zijn aan het aantal dagen in het programma");
-  assert.ok(reis.dagen.every((dag, index) => dag.nummer === index + 1 && dag.titel && dag.beschrijving && dag.vervoer && dag.verblijf), "Iedere dag heeft een opvolgend nummer, titel, beschrijving, vervoer en verblijf nodig");
-  assert.ok(reis.vertrekdata.every((vertrek) => vertrek.datum && vertrek.prijsstaffels?.length && vertrek.prijsstaffels.every((staffel) => staffel.omschrijving && staffel.prijs > 0)), "Iedere vertrekdatum heeft minimaal één geldige prijs nodig");
+  assert.ok(reis.dagen.every((dag, index) => dag.nummer === index + 1 && dag.titel && dag.beschrijving && dag.vervoer && dag.verblijf && dag.bron), "Iedere dag heeft een opvolgend nummer, titel, beschrijving, vervoer, verblijf en bron nodig");
+  assert.ok(reis.vertrekdata.every((vertrek) => vertrek.datum && vertrek.bron && vertrek.prijsstaffels?.length && vertrek.prijsstaffels.every((staffel) => staffel.omschrijving && staffel.prijs > 0)), "Iedere vertrekdatum heeft een bron en minimaal één geldige prijs nodig");
   const prijzen = reis.vertrekdata.flatMap((vertrek) => vertrek.prijsstaffels.map((staffel) => staffel.prijs));
   assert.equal(reis.prijsVanaf, Math.min(...prijzen), "Vanafprijs moet de laagste prijsstaffel zijn");
 }
