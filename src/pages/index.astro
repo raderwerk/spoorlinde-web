@@ -9,14 +9,14 @@ const reizen = await getCollection("reizen");
   <h1>Langzame treinreizen door Europa</h1>
   <p>
     De reis is belangrijker dan de bestemming. Hieronder de reizen die al in het
-    contentmodel staan; dit is een startpunt, geen volledig aanbod.
+    contentmodel staan.
   </p>
   <ul>
     {
       reizen.map((reis) => (
         <li>
           <strong>{reis.data.titel}</strong> — {reis.data.land}, {reis.data.duurInDagen} dagen,
-          vanaf €{reis.data.prijsVanaf}
+          vanaf €{reis.data.prijsVanaf} · {reis.data.moeilijkheid}
         </li>
       ))
     }
