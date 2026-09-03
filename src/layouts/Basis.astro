@@ -1,0 +1,26 @@
+---
+interface Props {
+  titel: string;
+}
+const { titel } = Astro.props;
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{titel} — Spoorlinde</title>
+  </head>
+  <body>
+    <header>
+      <p><strong>Spoorlinde</strong> — langzame treinreizen door Europa</p>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>Demonstratiebedrijf van Raderwerk. Dit bedrijf bestaat niet.</p>
+    </footer>
+  </body>
+</html>

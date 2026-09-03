@@ -1,0 +1,24 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { getCollection } from "astro:content";
+
+const reizen = await getCollection("reizen");
+---
+
+<Basis titel="Reizen">
+  <h1>Langzame treinreizen door Europa</h1>
+  <p>
+    De reis is belangrijker dan de bestemming. Hieronder de reizen die al in het
+    contentmodel staan; dit is een startpunt, geen volledig aanbod.
+  </p>
+  <ul>
+    {
+      reizen.map((reis) => (
+        <li>
+          <strong>{reis.data.titel}</strong> — {reis.data.land}, {reis.data.duurInDagen} dagen,
+          vanaf €{reis.data.prijsVanaf}
+        </li>
+      ))
+    }
+  </ul>
+</Basis>
