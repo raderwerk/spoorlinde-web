@@ -2,7 +2,6 @@ backend:
   name: github
   repo: raderwerk/spoorlinde-web
   branch: main
-  base_url: https://auth.spoorlinde.example
 local_backend: true
 locale: nl
 publish_mode: editorial_workflow
@@ -22,6 +21,9 @@ collections:
       - { label: Titel, name: titel, widget: string, required: true, hint: "De herkenbare naam van de reis, bijvoorbeeld ‘Dolomieten per nachttrein’." }
       - { label: Land, name: land, widget: string, required: true, hint: "Het belangrijkste bestemmingsland, bijvoorbeeld ‘Italië’." }
       - { label: Samenvatting, name: samenvatting, widget: text, required: true, hint: "Een korte, feitelijke introductie zonder garanties of overdrijving." }
+      - { label: Duur in dagen, name: duurInDagen, widget: number, value_type: int, min: 1, required: true, hint: "Het totale aantal reisdagen; dit moet gelijk zijn aan het aantal ingevulde dagen." }
+      - { label: Reismaanden, name: maanden, widget: list, field: { label: Maandnummer, name: maand, widget: number, value_type: int, min: 1, max: 12 }, required: true, min: 1, hint: "Maandnummers waarin de reis vertrekt, bijvoorbeeld 5 voor mei." }
+      - { label: Vanafprijs, name: prijsVanaf, widget: number, value_type: int, min: 1, required: true, hint: "De laagste prijs uit alle prijsstaffels, in hele euro’s." }
       - label: Moeilijkheid
         name: moeilijkheid
         widget: select

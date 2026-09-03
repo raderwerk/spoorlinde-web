@@ -29,6 +29,11 @@ jobs:
 
       - run: npx astro build
 
+      # The repository has no deployed GitHub OAuth proxy yet. Do not expose a
+      # login screen that cannot authenticate or safely write to the repository.
+      - name: Exclude CMS until OAuth is available
+        run: rm -rf dist/admin
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

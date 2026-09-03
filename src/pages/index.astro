@@ -15,8 +15,8 @@ const reizen = await getCollection("reizen");
     {
       reizen.map((reis) => (
         <li>
-          <strong>{reis.data.titel}</strong> — {reis.data.land}, {reis.data.dagen.length} dagen,
-          vanaf €{Math.min(...reis.data.vertrekdata.flatMap((vertrek) => vertrek.prijsstaffels.map((staffel) => staffel.prijs)))} · {reis.data.moeilijkheid}
+          <strong>{reis.data.titel}</strong> — {reis.data.land}, {reis.data.duurInDagen} dagen,
+          vanaf €{reis.data.prijsVanaf} · {reis.data.moeilijkheid}
         </li>
       ))
     }
