@@ -3,6 +3,7 @@ import Basis from "../layouts/Basis.astro";
 import { getCollection } from "astro:content";
 
 const reizen = await getCollection("reizen");
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
 ---
 
 <Basis titel="Reizen">
@@ -11,12 +12,13 @@ const reizen = await getCollection("reizen");
     De reis is belangrijker dan de bestemming. Hieronder de reizen die al in het
     contentmodel staan.
   </p>
+  <p><a href={`${base}reizen`}>Zoek en filter alle reizen</a></p>
   <ul>
     {
       reizen.map((reis) => (
         <li>
-          <strong>{reis.data.titel}</strong> — {reis.data.land}, {reis.data.dagen.length} dagen,
-          vanaf €{Math.min(...reis.data.vertrekdata.flatMap((vertrek) => vertrek.prijsstaffels.map((staffel) => staffel.prijs)))} · {reis.data.moeilijkheid}
+          <strong>{reis.data.titel}</strong> — {reis.data.land}, {reis.data.duurInDagen} dagen,
+          vanaf €{reis.data.prijsVanaf} · {reis.data.moeilijkheid}
         </li>
       ))
     }

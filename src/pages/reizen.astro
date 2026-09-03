@@ -2,23 +2,24 @@
 import Basis from "../layouts/Basis.astro";
 import { getCollection } from "astro:content";
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
 const collectie = await getCollection("reizen");
 const reizen = collectie.map((reis) => {
   const vertrek = reis.data.vertrekdata.toSorted((a, b) => a.datum.getTime() - b.datum.getTime())[0];
   return {
     slug: reis.slug,
     ...reis.data,
-    duur: reis.data.dagen.length,
+    duur: reis.data.duurInDagen,
+    maand: reis.data.maanden[0],
     vertrek,
     prijs: Math.min(...vertrek.prijsstaffels.map((staffel) => staffel.prijs)),
   };
 }).toSorted((a, b) => a.vertrek.datum.getTime() - b.vertrek.datum.getTime());
 const landen = [...new Set(reizen.map((reis) => reis.land))].sort();
-const maanden = [...new Set(reizen.map((reis) => reis.vertrek.datum.getMonth() + 1))].sort((a, b) => a - b);
+const maanden = [...new Set(reizen.map((reis) => reis.maand))].sort((a, b) => a - b);
 const duren = [...new Set(reizen.map((reis) => reis.duur))].sort((a, b) => a - b);
-const maandnamen = new Intl.DateTimeFormat("nl-NL", { month: "long" });
-const datumweergave = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "long", year: "numeric" });
+const maandnamen = new Intl.DateTimeFormat("nl-NL", { month: "long", timeZone: "UTC" });
+const datumweergave = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 ---
 
 <Basis titel="Reizen zoeken">
@@ -30,7 +31,7 @@ const datumweergave = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: 
 
   <form class="filters" data-filters aria-label="Reizen filteren">
     <label>Vertrekmaand
-      <select name="maand"><option value="">Alle maanden</option>{maanden.map((maand) => <option value={maand}>{maandnamen.format(new Date(2027, maand - 1, 1))}</option>)}</select>
+      <select name="maand"><option value="">Alle maanden</option>{maanden.map((maand) => <option value={maand}>{maandnamen.format(new Date(Date.UTC(2027, maand - 1, 1)))}</option>)}</select>
     </label>
     <label>Reisduur
       <select name="duur"><option value="">Elke duur</option>{duren.map((duur) => <option value={duur}>{duur} dagen</option>)}</select>
@@ -43,6 +44,7 @@ const datumweergave = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: 
     </label>
     <button type="reset">Wis filters</button>
   </form>
+  <noscript>Schakel JavaScript in om de reizen te filteren en sorteren.</noscript>
 
   <div class="status" aria-live="polite" aria-atomic="true">
     <strong data-aantal>{reizen.length} reizen gevonden</strong>
@@ -50,7 +52,7 @@ const datumweergave = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: 
   </div>
 
   <ul class="resultaten" data-resultaten>
-    {reizen.map((reis) => <li data-reis data-maand={reis.vertrek.datum.getMonth() + 1} data-duur={reis.duur} data-land={reis.land} data-prijs={reis.prijs} data-datum={reis.vertrek.datum.toISOString()}>
+    {reizen.map((reis) => <li data-reis data-maand={reis.maand} data-duur={reis.duur} data-land={reis.land} data-prijs={reis.prijs} data-datum={reis.vertrek.datum.toISOString()}>
       <article>
         <p class="meta">{reis.land} · {reis.duur} dagen</p>
         <h2>{reis.titel}</h2>
@@ -65,7 +67,7 @@ const datumweergave = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: 
 <style>
   :global(body){margin:0;background:#f5f1e8;color:#18372d;font-family:system-ui,sans-serif} :global(header),:global(footer),:global(main){max-width:72rem;margin:auto;padding:1rem clamp(1rem,4vw,3rem)}
   .intro{max-width:45rem;padding:3rem 0 1.5rem}.label,.meta{color:#8a3e20;font-weight:700;letter-spacing:.04em}h1{font-family:Georgia,serif;font-size:clamp(2.25rem,7vw,4.5rem);line-height:1;margin:.3rem 0 1rem}
-  .filters{background:#fff;border:1px solid #b9c7bd;border-radius:1rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:1rem;padding:1.25rem;align-items:end}label{font-weight:700}select,button{display:block;width:100%;box-sizing:border-box;margin-top:.4rem;min-height:2.75rem;border:2px solid #476b5d;border-radius:.4rem;background:#fff;color:#18372d;padding:.55rem;font:inherit}button{background:#18372d;color:#fff;font-weight:700;padding-inline:1rem}select:focus-visible,button:focus-visible{outline:3px solid #e26f36;outline-offset:3px}
+  .filters{background:#fff;border:1px solid #b9c7bd;border-radius:1rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:1rem;padding:1.25rem;align-items:end}label{font-weight:700}select,button{display:block;width:100%;box-sizing:border-box;margin-top:.4rem;min-height:2.75rem;border:2px solid #476b5d;border-radius:.4rem;background:#fff;color:#18372d;padding:.55rem;font:inherit}button{background:#18372d;color:#fff;font-weight:700;padding-inline:1rem}select:focus-visible,button:focus-visible{outline:3px solid #9b3515;outline-offset:3px}
   .status{min-height:4.5rem;padding:1.5rem 0}.status p{margin:.5rem 0 0}.resultaten{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.resultaten li{min-width:0}.resultaten article{height:100%;box-sizing:border-box;background:#fff;border-radius:.8rem;padding:1.3rem;border-bottom:4px solid #d56431}.resultaten h2{font-family:Georgia,serif;margin:.35rem 0}.resultaten dl{display:flex;justify-content:space-between;gap:1rem;margin:1.5rem 0 0}.resultaten dt{font-size:.85rem}.resultaten dd{font-weight:700;margin:0}
   [hidden]{display:none!important}@media(max-width:800px){.filters{grid-template-columns:1fr 1fr}.resultaten{grid-template-columns:1fr 1fr}}@media(max-width:520px){.filters,.resultaten{grid-template-columns:1fr}.intro{padding-top:1.5rem}.resultaten dl{flex-wrap:wrap}}
 </style>
