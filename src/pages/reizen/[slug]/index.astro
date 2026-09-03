@@ -2,21 +2,24 @@
 import { getCollection } from "astro:content";
 import Basis from "../../../layouts/Basis.astro";
 import { euro, maand, type Reis } from "../../../lib/reisschema";
-import { sitePath } from "../../../lib/site-base";
+import { siteBase, sitePath } from "../../../lib/site-base";
 
 export async function getStaticPaths() {
   return (await getCollection("reizen")).map((reis) => ({ params: { slug: reis.slug }, props: { reis } }));
 }
 const { reis } = Astro.props as { reis: Reis };
-const basis = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
+const { Content } = await reis.render();
+const basis = siteBase();
 ---
-<Basis titel={reis.data.titel}>
+<Basis titel={reis.data.titel} huidige="reizen">
   <article>
     <nav aria-label="Kruimelpad"><a href={basis}>Alle reizen</a> <span aria-hidden="true">/</span> {reis.data.titel}</nav>
     <header class="hero">
       <div><p class="eyebrow">{reis.data.land} · {reis.data.dagen.length} dagen · {reis.data.moeilijkheid}</p><h1>{reis.data.titel}</h1><p class="intro">{reis.data.samenvatting}</p></div>
       <img src={`${basis}images/route-landschap.svg`} width="1200" height="600" alt={`Treinroute door het landschap van ${reis.data.land}`} />
     </header>
+
+    <section aria-labelledby="reisverhaal"><h2 id="reisverhaal">Reisverhaal</h2><Content /></section>
 
     <section aria-labelledby="dagen"><h2 id="dagen">Dag voor dag</h2><p>Open een dag om alle details en de gebruikte bron te lezen.</p>
       <div class="dagen">{reis.data.dagen.map((dag) => <details><summary><span>Dag {dag.nummer}</span>{dag.titel}</summary><div class="dag"><p>{dag.beschrijving}</p><dl><div><dt>Vervoer</dt><dd>{dag.vervoer}</dd></div><div><dt>Verblijf</dt><dd>{dag.verblijf}</dd></div></dl><p class="bron"><strong>Bron:</strong> {dag.bron}</p></div></details>)}</div>
@@ -41,5 +44,5 @@ const basis = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/`;
 </Basis>
 
 <style>
-  :global(body){margin:0;background:#fcfaf4;color:#18352a;font-family:system-ui,sans-serif;line-height:1.6}:global(header>p),:global(main),:global(footer){max-width:1120px;margin-inline:auto;padding:1rem 5vw}article{display:grid;gap:3.5rem}nav a{color:#245a43}.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2rem}.hero img,#kaart img{width:100%;height:auto;border-radius:1rem}.eyebrow{font-weight:700;color:#8b3828}h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1;margin:.3rem 0}.intro{font-size:1.25rem}h2{font-size:2rem;margin-bottom:.25rem}details{border-block-start:1px solid #9aa99e}summary{cursor:pointer;padding:1rem;font-size:1.15rem;font-weight:700}summary span{display:inline-block;min-width:6rem;color:#8b3828}.dag{padding:0 1rem 1rem}dl{display:flex;gap:2rem}dt{font-weight:700}dd{margin:0}.bron{font-size:.9rem}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}caption{text-align:left;font-weight:700;padding:.5rem 0}th,td{text-align:left;padding:.8rem;border-bottom:1px solid #9aa99e;vertical-align:top}.download,button,.button{display:inline-block;background:#8b3828;color:white;border:0;border-radius:.35rem;padding:.8rem 1rem;font:inherit;font-weight:700;cursor:pointer}.download:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:4px solid #e2a72e;outline-offset:3px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}#kaart{margin-top:1rem;outline:none}@media(max-width:700px){.hero{grid-template-columns:1fr}dl{display:block}th,td{padding:.6rem;font-size:.9rem}}
+  :global(body){margin:0;background:#fcfaf4;color:#18352a;font-family:system-ui,sans-serif;line-height:1.6}:global(header>p),:global(main),:global(footer){max-width:1120px;margin-inline:auto;padding:1rem 5vw}article{display:grid;gap:3.5rem}nav a{color:#245a43}.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2rem}.hero img,#kaart img{width:100%;height:auto;border-radius:1rem}.eyebrow{font-weight:700;color:#8b3828}h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1;margin:.3rem 0}.intro{font-size:1.25rem}h2{font-size:2rem;margin-bottom:.25rem}details{border-block-start:1px solid #9aa99e}summary{cursor:pointer;padding:1rem;font-size:1.15rem;font-weight:700}summary span{display:inline-block;min-width:6rem;color:#8b3828}.dag{padding:0 1rem 1rem}dl{display:flex;gap:2rem}dt{font-weight:700}dd{margin:0}.bron{font-size:.9rem}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}caption{text-align:left;font-weight:700;padding:.5rem 0}th,td{text-align:left;padding:.8rem;border-bottom:1px solid #9aa99e;vertical-align:top}.download,button,.button{display:inline-block;background:#8b3828;color:white;border:0;border-radius:.35rem;padding:.8rem 1rem;font:inherit;font-weight:700;cursor:pointer}.download:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:4px solid #9b3515;outline-offset:3px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}#kaart{margin-top:1rem;outline:none}@media(max-width:700px){.hero{grid-template-columns:1fr}dl{display:block}th,td{padding:.6rem;font-size:.9rem}}
 </style>

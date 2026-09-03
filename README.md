@@ -44,10 +44,10 @@ Vereist: Node.js 22 of hoger.
 ```bash
 npm install
 npm run dev       # lokale server op http://localhost:4321
-npm test          # CRM-scenario's: nieuw contact, duplicaat, storing
+npm test          # alle CRM-, content- en reisdetailtests
 npm run build     # typecheck + statische build naar dist/
 npm run test:content # controleert twaalf reizen plus een ongeldige reis
-npm test            # valideert content en de gebouwde reisdetailpagina's
+npm run test:detail # bouwt en controleert reisdetails, pdf en foutpad
 npm run preview   # de build lokaal bekijken
 ```
 
